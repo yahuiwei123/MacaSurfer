@@ -3,6 +3,13 @@
 A comprehensive pipeline for fast and accurate cortical surface reconstruction with macaque-specific parcellation
 ![overall](https://github.com/user-attachments/assets/ff514ce7-1ea6-4a97-a535-4df7aef73444)
 
+![multisites](https://github.com/user-attachments/assets/dfa990fa-419f-4db0-9936-8044660ad918)
+
+## MEBRAIN Template
+
+![template](https://github.com/user-attachments/assets/15004cb3-45a7-423d-9626-a12ce689cec5)
+
+
 ## Installation
 
 + download the singularity image
@@ -305,7 +312,4 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
           - Native
           - mri
   ```
-+ Results cross multiple sites
-
-![multisites](https://github.com/user-attachments/assets/dfa990fa-419f-4db0-9936-8044660ad918)
 
