@@ -3,7 +3,7 @@
 A comprehensive pipeline for fast and accurate cortical surface reconstruction with macaque-specific parcellation
 ![overall](https://github.com/user-attachments/assets/ff514ce7-1ea6-4a97-a535-4df7aef73444)
 
-<img src="(https://github.com/user-attachments/assets/7daba7ba-f8b5-4b41-9073-c789bf5f3062" alt="multisites" style="width:100%;">
+<img src="https://github.com/user-attachments/assets/7daba7ba-f8b5-4b41-9073-c789bf5f3062" alt="multisites" style="width:100%;">
 
 ## MEBRAIN Template
 
