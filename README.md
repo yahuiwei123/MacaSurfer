@@ -22,7 +22,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   + FreeSurfer >= 7.3.2
   + FSL >= 6.0.5
 
-## Useage
+## Usage
 
 + Before running, you also need to create a folder named **RawData** inside each subject’s directory following the file structure described in **Results**. Place the T1 and T2 images in NIFTI format into this folder. Note that the T1 and T2 images must include ‘T1’ or ‘T2’ in their filenames to allow the program to identify their modality. It is also acceptable to have only T1 modality images.
 
