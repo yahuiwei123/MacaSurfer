@@ -29,7 +29,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
 + One-click run
 
   ```shell
-  /home/yhwei/software/singularity/bin/singularity exec --nv --writable \
+  /home/yhwei/software/singularity/bin/singularity exec --nv \
   	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
   	-B /path/to/your/fsl-6.0.5:/soft/fsl \
   	-B /path/to/your/subject_directory/:/workspace \
@@ -42,7 +42,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   + Only prepare part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv --writable \
+    /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
     	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
@@ -53,7 +53,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   + Only tissue segmentation and tissue-guided bias field correction part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv --writable \
+    /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
     	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
@@ -64,7 +64,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   + Only surface reconstruction part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv --writable \
+    /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
     	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
@@ -75,7 +75,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   + Only post process part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv --writable \
+    /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
     	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
