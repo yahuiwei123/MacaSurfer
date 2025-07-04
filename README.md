@@ -68,7 +68,6 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
   ```shell
   /home/yhwei/software/singularity/bin/singularity exec --nv \
   	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-  	-B /path/to/your/fsl-6.0.5:/soft/fsl \
   	-B /path/to/your/subject_directory/:/workspace \
   	/path/to/your/macasurfer.sif \
       sh /MacaSurfer/Examples/recon-all.sh
@@ -81,7 +80,6 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
     ```shell
     /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
     	/path/to/your/macasurfer.sif \
         sh /MacaSurfer/Examples/prepare.sh
@@ -92,7 +90,6 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
     ```shell
     /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
     	/path/to/your/macasurfer.sif \
         sh /MacaSurfer/Examples/enhance.sh
@@ -103,7 +100,6 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
     ```shell
     /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
     	/path/to/your/macasurfer.sif \
         sh /MacaSurfer/Examples/surface.sh
@@ -114,7 +110,6 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
     ```shell
     /home/yhwei/software/singularity/bin/singularity exec --nv \
     	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/fsl-6.0.5:/soft/fsl \
     	-B /path/to/your/subject_directory/:/workspace \
     	/path/to/your/macasurfer.sif \
         sh /MacaSurfer/Examples/postprocess.sh
