@@ -2,7 +2,22 @@
 
 A comprehensive pipeline for fast and accurate cortical surface reconstruction with macaque-specific parcellation
 
+![overall]()
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://github.com/yahuiwei123/MacaSurfer/blob/main/doc/figures/overall.svg">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">Fig.1 (a) Overall workflow The workflow is organized into four stages. Green box: data preparation stage. Beige box: segmentation and enhancement stage. Blue box: surface initialization stage. Pink box: surface refinement stage. (b) Cortical and subcortical atlas Cortical parcellation on the MEBRAIN template surface obtained from MBNA atlas via MSM-based spherical registration; Atlas mapped from the D99 atlas on the NMT template to the MEBRAIN template volume.</div>
+</center>
 
+作者：知乎用户
+链接：https://www.zhihu.com/question/42802592/answer/383110578
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## Installation
 
