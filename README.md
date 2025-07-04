@@ -57,7 +57,7 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
 ```
 
 + other necessary softwares
-  + FreeSurfer >= 7.3.2
+  + FreeSurfer == 7.x.x
 
 ## Usage
 
