@@ -1,7 +1,8 @@
 # MacaSurfer Pipeline
 
-A comprehensive pipeline for fast and accurate cortical surface reconstruction with macaque-specific parcellation
+MacaSurfer offers a standardized preprocessing pipeline specifically tailored for structural MRI data of non-human primates. It features a streamlined architecture with full automation and exhibits strong robustness against variations in image quality and the presence of anatomical abnormalities. The pipeline establishes a systematic workflow from data curation to cortical surface modeling, addressing key challenges in multimodal segmentation and surface reconstruction for macaque brains through an integration of classical image processing techniques and modern deep learning algorithms. MacaSurfer supports a unified atlas framework, multi-contrast and multi-sequence fusion, as well as fine-grained tissue segmentation and cortical modeling.
 
++ Overview
 <center>
   <img style="border-radius: 0.3125em;
               box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
@@ -16,6 +17,7 @@ A comprehensive pipeline for fast and accurate cortical surface reconstruction w
               margin-top: 0px;">Fig.1 (a) Overall workflow The workflow is organized into four stages. Green box: data preparation stage. Beige box: segmentation and enhancement stage. Blue box: surface initialization stage. Pink box: surface refinement stage. (b) Cortical and subcortical atlas Cortical parcellation on the MEBRAIN template surface obtained from MBNA atlas via MSM-based spherical registration; Atlas mapped from the D99 atlas on the NMT template to the MEBRAIN template volume.</div>
 </center>
 
++ Generalizability
 <center>
   <img style="border-radius: 0.3125em;
               box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
@@ -30,6 +32,7 @@ A comprehensive pipeline for fast and accurate cortical surface reconstruction w
               margin-top: 0px;">Fig2. (a) Cortical surface reconstructions from ten randomly selected subjects across all centers. Green contours indicate the white matter surface boundaries, and yellow contours indicate the pial surface boundaries. (b) High-quality cortical surface reconstruction was achieved even in subjects with brain tumors.</div>
 </center>
 
++ Accuracy
 <center>
   <img style="border-radius: 0.3125em;
               box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
