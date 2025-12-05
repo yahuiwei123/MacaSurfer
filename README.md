@@ -53,11 +53,9 @@ MacaSurfer offers a standardized preprocessing pipeline specifically tailored fo
 + download the singularity image
 
 ```shell
-singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
+singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v3.0
 ```
 
-+ other necessary softwares
-  + FreeSurfer == 7.x.x
 
 ## Usage
 
@@ -66,233 +64,31 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
 + One-click run
 
   ```shell
-  /home/yhwei/software/singularity/bin/singularity exec --nv \
-  	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-  	-B /path/to/your/subject_directory/:/workspace \
-  	/path/to/your/macasurfer.sif \
-      sh /MacaSurfer/Examples/recon-all.sh
+/usr/bin/singularity exec --nv --writable \
+    -B ${subj_dir}/${subj_id}:/workspace \
+    ~/software/macasurfer_v3.0 \
+    sh /MacaSurfer/MacaSurfer.sh --bfc_method tgbfc --fix_white true --deep_white false --vessel_detect false
   ```
 
 + Step-by-step run
 
-  + Only prepare part
+  + Only before check part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv \
-    	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/subject_directory/:/workspace \
-    	/path/to/your/macasurfer.sif \
-        sh /MacaSurfer/Examples/prepare.sh
+    /usr/bin/singularity exec --nv --writable \
+    -B ${subj_dir}/${subj_id}:/workspace \
+    ~/software/macasurfer_v3.0 \
+    sh /MacaSurfer/MacaSurfer.sh --bfc_method tgbfc --fix_white true --deep_white false --vessel_detect false --before_check true
     ```
 
-  + Only tissue segmentation and tissue-guided bias field correction part
+  + After check part
 
     ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv \
-    	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/subject_directory/:/workspace \
-    	/path/to/your/macasurfer.sif \
-        sh /MacaSurfer/Examples/enhance.sh
+    /usr/bin/singularity exec --nv --writable \
+    -B ${subj_dir}/${subj_id}:/workspace \
+    ~/software/macasurfer_v3.0 \
+    sh /MacaSurfer/MacaSurfer.sh --bfc_method tgbfc --fix_white true --deep_white false --vessel_detect false --before_check true
     ```
-
-  + Only surface reconstruction part
-
-    ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv \
-    	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/subject_directory/:/workspace \
-    	/path/to/your/macasurfer.sif \
-        sh /MacaSurfer/Examples/surface.sh
-    ```
-
-  + Only post process part
-
-    ```shell
-    /home/yhwei/software/singularity/bin/singularity exec --nv \
-    	-B /path/to/your/freesurfer-7.3.2:/soft/freesurfer \
-    	-B /path/to/your/subject_directory/:/workspace \
-    	/path/to/your/macasurfer.sif \
-        sh /MacaSurfer/Examples/postprocess.sh
-    ```
-
-+ User-defined running scripts
-
-  + Below is the complete content of the recon-all.sh script. Users can change command in this file and rebind it to the singularity image. Detailed tutorial will coming soon ...
-
-  ```shell
-  #!/bin/bash
-  set -e
-  
-  HCPPIPEDIR=/MacaSurfer
-  EnvironmentScript=${HCPPIPEDIR}/SetUpHCPPipelineNHP.sh
-  . ${EnvironmentScript}
-  
-  # Input Variables
-  StudyFolder=/
-  Subject=workspace
-  
-  echo $StudyFolder
-  echo $Subject
-  
-  if command -v nvidia-smi &> /dev/null && nvidia-smi -L &> /dev/null; then
-      echo "GPU detected. Running with GPU..."
-      device="gpu"
-  else
-      echo "No GPU detected. Running on CPU..."
-      device="cpu"
-  fi
-  
-  #####
-  ##### [step1]: Prepare stage
-  #####
-  sh ${HCPPIPEDIR}/Prepare/Prepare.sh "$StudyFolder"/"$Subject" 1
-  sh ${HCPPIPEDIR}/Prepare/Prepare.sh "$StudyFolder"/"$Subject" 2
-  sh ${HCPPIPEDIR}/Prepare/Prepare.sh "$StudyFolder"/"$Subject" 3
-  
-  ####
-  #### [step2]: Enhance stage
-  ####
-  
-  SPECIES="Macaque"
-  segment_model=${MODEL_PATH}
-  skull_strip=Yes # Yes
-  enhance_contrast=No # Yes
-  bfc=n4 # sqrt
-  
-  # auto detect T2
-  if find "$StudyFolder"/"$Subject"/RawData/ -type f -name "*T2*.nii.gz" | grep -q .; then
-      t2='--t2'
-  else
-      t2=''
-  fi
-  
-  if [[ $t2 = '' ]]; then
-      fake_t2="--fake_t2"
-  fi
-  
-  if [[ $skull_strip = "Yes" ]]; then
-      skull_strip="--skull_strip"
-  fi
-  
-  if [[ $enhance_contrast = "Yes" ]]; then
-      enhance_contrast="--enhance_contrast"
-  fi
-  
-  OrigPath=${StudyFolder}/${Subject}/Prepare
-  SubjectPath=${StudyFolder}/${Subject}
-  
-  sh ${HCPPIPEDIR}/Enhance/PreProcessNHP.sh \
-      --in_dir=${OrigPath} \
-      --out_dir=${SubjectPath} \
-      --model=${segment_model} \
-      --bfc=${bfc} \
-      --step=1 \
-      --device=$device \
-      $t2 \
-      --select_valid \
-      $skull_strip \
-      $enhance_contrast \
-      --correct_orient \
-      $fake_t2 \
-      
-  
-  sh ${HCPPIPEDIR}/Enhance/PreProcessNHP.sh \
-      --in_dir=${OrigPath} \
-      --out_dir=${SubjectPath} \
-      --model=${segment_model} \
-      --bfc=${bfc} \
-      --step=2 \
-      --device=$device \
-      $t2 \
-      --select_valid \
-      $skull_strip \
-      $enhance_contrast \
-      --correct_orient \
-      $fake_t2 \
-  
-  sh ${HCPPIPEDIR}/Enhance/PreProcessNHP.sh \
-      --in_dir=${OrigPath} \
-      --out_dir=${SubjectPath} \
-      --model=${segment_model} \
-      --bfc=${bfc} \
-      --step=3 \
-      --device=$device \
-      $t2 \
-      --select_valid \
-      $skull_strip \
-      $enhance_contrast \
-      --correct_orient \
-      $fake_t2 \
-  
-  sh ${HCPPIPEDIR}/Enhance/PreProcessNHP.sh \
-      --in_dir=${OrigPath} \
-      --out_dir=${SubjectPath} \
-      --model=${segment_model} \
-      --bfc=${bfc} \
-      --step=4 \
-      --device=$device \
-      $t2 \
-      --select_valid \
-      $skull_strip \
-      $enhance_contrast \
-      --correct_orient \
-      $fake_t2 \
-  
-  
-  
-  ######
-  ###### [step3]: FreeSurfer stage
-  ######
-  
-  SPECIES="Macaque"
-  PreprocessDIR="${StudyFolder}/${Subject}/Enhance"
-  SubjectDIR="${StudyFolder}/${Subject}/FreeSurfer"
-  SubjectID="${Subject}"
-  T1wImage="${StudyFolder}/${Subject}/Enhance/T1w/T1w_acpc_iso.nii.gz" #T1w FreeSurfer Input (Full Resolution)
-  T1wImageBrain="${StudyFolder}/${Subject}/Enhance/T1w/T1w_acpc_iso.nii.gz" #T1w FreeSurfer Input (Full Resolution)
-  T2wImage="${StudyFolder}/${Subject}/Enhance/T1w/T2w_acpc_iso.nii.gz" #T2w FreeSurfer Input (Full Resolution)
-  FSLinearTransform="${HCPPIPEDIR_Templates}/fs_xfms/eye.xfm" #Identity
-  T2wFlag="${T2wFlag:=T2w}" # T2w, FLAIR or NONE. Default is T2w
-  FullyDeep=0
-  
-  mkdir -p $SubjectDIR
-  
-  RunMode=0
-  sh ${HCPPIPEDIR}/FreeSurfer/FreeSurferPipelineNHP.sh \
-      --preprocessDIR=$PreprocessDIR \
-      --subject="$Subject" \
-      --subjectDIR="$SubjectDIR" \
-      --t1="$T1wImage" \
-      --t1brain="$T1wImageBrain" \
-      --t2="$T2wImage" \
-      --fslinear="$FSLinearTransform" \
-      --gcadir="$GCAdir" \
-      --rescaletrans="$RescaleVolumeTransform" \
-      --asegedit="$AsegEdit" \
-      --controlpoints="$ControlPoints" \
-      --wmedit="$WmEdit" \
-      --t2wflag="$T2wFlag" \
-      --species="$SPECIES" \
-      --fullydeep="$FullyDeep" \
-      --runmode="$RunMode" \
-      --seed="$Seed" \
-      --printcom="$PRINTCOM" \
-      --firstpass="$FirstPass"
-  
-  
-  ######
-  ###### [step4]: Postprocess
-  ######
-  
-  if [ -e "${StudyFolder}/${Subject}/Results/" ]; then
-      rm -rf "${StudyFolder}/${Subject}/Results/"
-  fi
-  
-  sh ${HCPPIPEDIR}/PostProcess/PostProcessNHP.sh \
-      --path=${StudyFolder} \
-      --subject=${Subject}
-  ```
-
   
 
 ## Results
@@ -1162,4 +958,5 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v1.0
     │   └── wb.spec
     └── report_acpc.svg
   ```
+
 
