@@ -15,6 +15,7 @@ MacaSurfer offers a standardized preprocessing pipeline specifically tailored fo
               margin-bottom: 2px;" 
        src="https://github.com/yahuiwei123/MacaSurfer/blob/main/figures/overall.svg" />
 </center>
+
 + Generalizability on Multi-sites
 
 We evaluated the robustness of our pipeline across macaque datasets from 24 acquisition sites. The pipeline consistently produced high-quality reconstructions in multi-site adult macaques and also successfully reconstructed the cortex in the 3-month-old UNC macaque dataset.
