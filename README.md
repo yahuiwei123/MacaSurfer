@@ -4,58 +4,40 @@ MacaSurfer offers a standardized preprocessing pipeline specifically tailored fo
 
 + Overview
 
-<center>
-  <img style="border-radius: 0.3125em;
-              box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
-              display: block;
-              margin-bottom: 2px;" 
-       src="https://github.com/yahuiwei123/MacaSurfer/blob/main/doc/figures/overall.svg" />
+(a) Overall workflow The workflow is organized into four stages. Green box: data preparation stage. Beige box: segmentation and enhancement stage. Blue box: surface initialization stage. Pink box: surface refinement stage. 
 
-
-  <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-              display: inline-block;
-              color: #999;
-              padding: 2px;
-              margin-top: 0px;">Fig.1 (a) Overall workflow The workflow is organized into four stages. Green box: data preparation stage. Beige box: segmentation and enhancement stage. Blue box: surface initialization stage. Pink box: surface refinement stage. (b) Cortical and subcortical atlas Cortical parcellation on the MEBRAIN template surface obtained from MBNA atlas via MSM-based spherical registration; Atlas mapped from the D99 atlas on the NMT template to the MEBRAIN template volume.</div>
-
-</center>
-
-+ Generalizability
+(b) Cortical and subcortical atlas Cortical parcellation on the MEBRAIN template surface obtained from MBNA atlas via MSM-based spherical registration; Atlas mapped from the D99 atlas on the NMT template to the MEBRAIN template volume.
 
 <center>
   <img style="border-radius: 0.3125em;
               box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
               display: block;
               margin-bottom: 2px;" 
-       src="https://github.com/yahuiwei123/MacaSurfer/blob/main/doc/figures/multisites.jpg" />
+       src="C:\Users\yhwei\Desktop\doc\figures\overall.svg" />
 
++ Generalizability on Multi-sites
 
-  <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-              display: inline-block;
-              color: #999;
-              padding: 2px;
-              margin-top: 0px;">Fig2. (a) Cortical surface reconstructions from ten randomly selected subjects across all centers. Green contours indicate the white matter surface boundaries, and yellow contours indicate the pial surface boundaries. (b) High-quality cortical surface reconstruction was achieved even in subjects with brain tumors.</div>
+We evaluated the robustness of our pipeline across macaque datasets from 24 acquisition sites. The pipeline consistently produced high-quality reconstructions in multi-site adult macaques and also successfully reconstructed the cortex in the 3-month-old UNC macaque dataset.
 
-</center>
+![multisites](C:\Users\yhwei\Desktop\doc\figures\multisites.svg)
 
-+ Accuracy
++ Tissue-guided Bias Field Correction
 
-<center>
-  <img style="border-radius: 0.3125em;
-              box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
-              display: block;
-              margin-bottom: 2px;" 
-       src="https://github.com/yahuiwei123/MacaSurfer/blob/main/doc/figures/tgb.svg" />
+The deep learning–based macaque tissue segmentation algorithm nBEST (https://github.com/TaoZhong11/nBEST) provides robust cerebrospinal fluid, gray matter and white matter labels. We leverage these high-quality tissue maps to guide bias-field correction, enabling the removal of higher-frequency components that are typically difficult to estimate. This correction substantially improves intensity homogeneity and, in turn, facilitates more accurate reconstruction of the white-matter surface.
 
+![tgb](C:\Users\yhwei\Desktop\doc\figures\tgb.svg)
 
-  <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-              display: inline-block;
-              color: #999;
-              padding: 2px;
-              margin-top: 0px;">Fig3. Comparison of Bias Field Correction Methods (a) Heatmaps visualizing the estimated bias field after N4 correction (top) and the proposed tissue-guided correction (bottom). The proposed method more effectively reduces intra-tissue bias, particularly in regions with thin white matter structures such as the frontal and occipital lobes. (b) White matter surface reconstructions after applying each correction method. Compared to N4, our method yields more anatomically accurate surfaces, especially in the occipital region, where white matter boundaries are better preserved.</div>
++ Cortical Region Extraction
 
-</center>
+FreeSurfer often exhibits inaccuracies in identifying the medial wall, and even small errors in this region can substantially disrupt spherical registration, sometimes leading to global shifts of the cortical surface in spherical space. To address this limitation, we developed a robust medial-wall extraction algorithm that reliably delineates the cortical region in individual subjects, providing a more stable foundation for downstream surface registration and cortical parcellation. We manually inspected the cortical-region extraction results for all subjects in the PRIME-DE dataset and confirmed that the algorithm produced anatomically correct cortical masks for every subject, with no obvious failures.
 
+![medial_wall](C:\Users\yhwei\Desktop\doc\figures\medial_wall.svg)
+
++ Surface-aware Volume Registration
+
+Voxel-level group analyses—particularly in deep learning applications—require precise alignment of each subject’s cortical ribbon to a common template. Traditional volume-only registration methods, however, struggle to achieve accurate correspondence in the ribbon, leading to suboptimal voxelwise alignment of both cortical regions and BOLD signals. To overcome these limitations, we extend the FireANTs  framework (https://github.com/rohitrango/FireANTs) with a Surface-Aware symmetric diffeomorphic registration approach that enables substantially more precise voxelwise cortical alignment across subjects.
+
+![surface_aware](C:\Users\yhwei\Desktop\doc\figures\surface_aware.svg)
 
 ## Installation
 
@@ -102,3 +84,15 @@ singularity pull --arch amd64 library://weiyahui123/weiyahui123/macasurfer:v3.0
 ## Results
 
 + Directory structure
+
+## Citation
+
++ Coming soon...
+
+## Contacts
+
+For questions/bugs/feedback, please contact: 
+
+Yahui Wei, Ph.D., weiyahui2023@ia.ac.cn
+
+*Institute of Automation, Chinese Academy of Sciences*
