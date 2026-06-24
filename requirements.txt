@@ -1,0 +1,81 @@
+# =============================================================================
+# MacaSurfer / macapipe — Python environment requirements
+# =============================================================================
+# Install:  pip install -r requirements.txt
+# Or with conda first, then pip:
+#   conda create -n macapipe python=3.10
+#   conda activate macapipe
+#   pip install -r requirements.txt
+
+# =============================================================================
+# Core scientific computing
+# =============================================================================
+numpy
+scipy
+nibabel
+SimpleITK
+
+# =============================================================================
+# Deep learning (PyTorch ecosystem)
+# =============================================================================
+torch>=1.12
+monai
+pytorch3d
+timm
+axial-attention
+einops
+
+# =============================================================================
+# Image processing & computer vision
+# =============================================================================
+scikit-image
+opencv-python
+Pillow
+tifffile
+trimesh
+pyrender
+
+# =============================================================================
+# Machine learning & statistics
+# =============================================================================
+scikit-learn
+pandas
+tqdm
+pcntoolkit
+
+# =============================================================================
+# Neuroimaging workflows
+# =============================================================================
+nipype
+niworkflows
+nitransforms
+sdcflows
+pybids
+h5py
+surfplot
+
+# =============================================================================
+# Medical image augmentation (nnU-Net / nBEST)
+# =============================================================================
+batchgenerators
+numba
+
+# =============================================================================
+# Configuration & utilities
+# =============================================================================
+pyyaml
+requests
+omegaconf
+hydra-core
+nvidia-ml-py3
+
+# =============================================================================
+# Distributed / parallel computing (optional)
+# =============================================================================
+ray
+
+# =============================================================================
+# Multi-task learning (FireANTs surface registration)
+# =============================================================================
+# LibMTL — may need manual install from:
+#   https://github.com/median-research-group/LibMTL

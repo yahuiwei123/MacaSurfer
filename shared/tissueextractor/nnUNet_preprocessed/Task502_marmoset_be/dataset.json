@@ -1,0 +1,673 @@
+{
+    "description": "",
+    "labels": {
+        "0": "background",
+        "1": "Wm",
+        "2": "GM"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "T1"
+    },
+    "name": "Task502_marmoset_be",
+    "numTest": 0,
+    "numTraining": 163,
+    "reference": "",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "test": [],
+    "training": [
+        {
+            "image": "./imagesTr/marmoset_001.nii.gz",
+            "label": "./labelsTr/marmoset_001.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_002.nii.gz",
+            "label": "./labelsTr/marmoset_002.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_003.nii.gz",
+            "label": "./labelsTr/marmoset_003.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_004.nii.gz",
+            "label": "./labelsTr/marmoset_004.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_005.nii.gz",
+            "label": "./labelsTr/marmoset_005.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_006.nii.gz",
+            "label": "./labelsTr/marmoset_006.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_007.nii.gz",
+            "label": "./labelsTr/marmoset_007.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_008.nii.gz",
+            "label": "./labelsTr/marmoset_008.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_009.nii.gz",
+            "label": "./labelsTr/marmoset_009.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_010.nii.gz",
+            "label": "./labelsTr/marmoset_010.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_011.nii.gz",
+            "label": "./labelsTr/marmoset_011.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_012.nii.gz",
+            "label": "./labelsTr/marmoset_012.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_013.nii.gz",
+            "label": "./labelsTr/marmoset_013.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_014.nii.gz",
+            "label": "./labelsTr/marmoset_014.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_015.nii.gz",
+            "label": "./labelsTr/marmoset_015.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_016.nii.gz",
+            "label": "./labelsTr/marmoset_016.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_017.nii.gz",
+            "label": "./labelsTr/marmoset_017.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_018.nii.gz",
+            "label": "./labelsTr/marmoset_018.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_019.nii.gz",
+            "label": "./labelsTr/marmoset_019.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_020.nii.gz",
+            "label": "./labelsTr/marmoset_020.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_021.nii.gz",
+            "label": "./labelsTr/marmoset_021.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_022.nii.gz",
+            "label": "./labelsTr/marmoset_022.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_023.nii.gz",
+            "label": "./labelsTr/marmoset_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_024.nii.gz",
+            "label": "./labelsTr/marmoset_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_025.nii.gz",
+            "label": "./labelsTr/marmoset_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_026.nii.gz",
+            "label": "./labelsTr/marmoset_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_027.nii.gz",
+            "label": "./labelsTr/marmoset_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_028.nii.gz",
+            "label": "./labelsTr/marmoset_028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_029.nii.gz",
+            "label": "./labelsTr/marmoset_029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_030.nii.gz",
+            "label": "./labelsTr/marmoset_030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_031.nii.gz",
+            "label": "./labelsTr/marmoset_031.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_032.nii.gz",
+            "label": "./labelsTr/marmoset_032.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_033.nii.gz",
+            "label": "./labelsTr/marmoset_033.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_034.nii.gz",
+            "label": "./labelsTr/marmoset_034.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_035.nii.gz",
+            "label": "./labelsTr/marmoset_035.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_036.nii.gz",
+            "label": "./labelsTr/marmoset_036.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_037.nii.gz",
+            "label": "./labelsTr/marmoset_037.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_038.nii.gz",
+            "label": "./labelsTr/marmoset_038.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_039.nii.gz",
+            "label": "./labelsTr/marmoset_039.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_040.nii.gz",
+            "label": "./labelsTr/marmoset_040.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_041.nii.gz",
+            "label": "./labelsTr/marmoset_041.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_042.nii.gz",
+            "label": "./labelsTr/marmoset_042.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_043.nii.gz",
+            "label": "./labelsTr/marmoset_043.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_044.nii.gz",
+            "label": "./labelsTr/marmoset_044.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_045.nii.gz",
+            "label": "./labelsTr/marmoset_045.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_046.nii.gz",
+            "label": "./labelsTr/marmoset_046.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_047.nii.gz",
+            "label": "./labelsTr/marmoset_047.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_048.nii.gz",
+            "label": "./labelsTr/marmoset_048.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_049.nii.gz",
+            "label": "./labelsTr/marmoset_049.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_050.nii.gz",
+            "label": "./labelsTr/marmoset_050.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_051.nii.gz",
+            "label": "./labelsTr/marmoset_051.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_052.nii.gz",
+            "label": "./labelsTr/marmoset_052.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_053.nii.gz",
+            "label": "./labelsTr/marmoset_053.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_054.nii.gz",
+            "label": "./labelsTr/marmoset_054.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_055.nii.gz",
+            "label": "./labelsTr/marmoset_055.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_056.nii.gz",
+            "label": "./labelsTr/marmoset_056.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_057.nii.gz",
+            "label": "./labelsTr/marmoset_057.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_058.nii.gz",
+            "label": "./labelsTr/marmoset_058.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_059.nii.gz",
+            "label": "./labelsTr/marmoset_059.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_060.nii.gz",
+            "label": "./labelsTr/marmoset_060.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_061.nii.gz",
+            "label": "./labelsTr/marmoset_061.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_062.nii.gz",
+            "label": "./labelsTr/marmoset_062.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_063.nii.gz",
+            "label": "./labelsTr/marmoset_063.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_064.nii.gz",
+            "label": "./labelsTr/marmoset_064.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_065.nii.gz",
+            "label": "./labelsTr/marmoset_065.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_066.nii.gz",
+            "label": "./labelsTr/marmoset_066.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_067.nii.gz",
+            "label": "./labelsTr/marmoset_067.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_068.nii.gz",
+            "label": "./labelsTr/marmoset_068.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_069.nii.gz",
+            "label": "./labelsTr/marmoset_069.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_070.nii.gz",
+            "label": "./labelsTr/marmoset_070.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_071.nii.gz",
+            "label": "./labelsTr/marmoset_071.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_072.nii.gz",
+            "label": "./labelsTr/marmoset_072.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_073.nii.gz",
+            "label": "./labelsTr/marmoset_073.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_074.nii.gz",
+            "label": "./labelsTr/marmoset_074.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_075.nii.gz",
+            "label": "./labelsTr/marmoset_075.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_076.nii.gz",
+            "label": "./labelsTr/marmoset_076.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_077.nii.gz",
+            "label": "./labelsTr/marmoset_077.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_078.nii.gz",
+            "label": "./labelsTr/marmoset_078.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_079.nii.gz",
+            "label": "./labelsTr/marmoset_079.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_080.nii.gz",
+            "label": "./labelsTr/marmoset_080.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_081.nii.gz",
+            "label": "./labelsTr/marmoset_081.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_082.nii.gz",
+            "label": "./labelsTr/marmoset_082.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_083.nii.gz",
+            "label": "./labelsTr/marmoset_083.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_084.nii.gz",
+            "label": "./labelsTr/marmoset_084.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_085.nii.gz",
+            "label": "./labelsTr/marmoset_085.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_086.nii.gz",
+            "label": "./labelsTr/marmoset_086.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_087.nii.gz",
+            "label": "./labelsTr/marmoset_087.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_088.nii.gz",
+            "label": "./labelsTr/marmoset_088.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_089.nii.gz",
+            "label": "./labelsTr/marmoset_089.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_090.nii.gz",
+            "label": "./labelsTr/marmoset_090.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_091.nii.gz",
+            "label": "./labelsTr/marmoset_091.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_092.nii.gz",
+            "label": "./labelsTr/marmoset_092.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_093.nii.gz",
+            "label": "./labelsTr/marmoset_093.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_094.nii.gz",
+            "label": "./labelsTr/marmoset_094.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_095.nii.gz",
+            "label": "./labelsTr/marmoset_095.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_096.nii.gz",
+            "label": "./labelsTr/marmoset_096.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_097.nii.gz",
+            "label": "./labelsTr/marmoset_097.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_098.nii.gz",
+            "label": "./labelsTr/marmoset_098.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_099.nii.gz",
+            "label": "./labelsTr/marmoset_099.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_100.nii.gz",
+            "label": "./labelsTr/marmoset_100.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_101.nii.gz",
+            "label": "./labelsTr/marmoset_101.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_102.nii.gz",
+            "label": "./labelsTr/marmoset_102.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_103.nii.gz",
+            "label": "./labelsTr/marmoset_103.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_104.nii.gz",
+            "label": "./labelsTr/marmoset_104.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_105.nii.gz",
+            "label": "./labelsTr/marmoset_105.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_106.nii.gz",
+            "label": "./labelsTr/marmoset_106.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_107.nii.gz",
+            "label": "./labelsTr/marmoset_107.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_108.nii.gz",
+            "label": "./labelsTr/marmoset_108.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_109.nii.gz",
+            "label": "./labelsTr/marmoset_109.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_110.nii.gz",
+            "label": "./labelsTr/marmoset_110.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_111.nii.gz",
+            "label": "./labelsTr/marmoset_111.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_112.nii.gz",
+            "label": "./labelsTr/marmoset_112.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_113.nii.gz",
+            "label": "./labelsTr/marmoset_113.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_114.nii.gz",
+            "label": "./labelsTr/marmoset_114.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_115.nii.gz",
+            "label": "./labelsTr/marmoset_115.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_116.nii.gz",
+            "label": "./labelsTr/marmoset_116.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_117.nii.gz",
+            "label": "./labelsTr/marmoset_117.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_118.nii.gz",
+            "label": "./labelsTr/marmoset_118.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_119.nii.gz",
+            "label": "./labelsTr/marmoset_119.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_120.nii.gz",
+            "label": "./labelsTr/marmoset_120.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_121.nii.gz",
+            "label": "./labelsTr/marmoset_121.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_122.nii.gz",
+            "label": "./labelsTr/marmoset_122.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_123.nii.gz",
+            "label": "./labelsTr/marmoset_123.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_124.nii.gz",
+            "label": "./labelsTr/marmoset_124.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_125.nii.gz",
+            "label": "./labelsTr/marmoset_125.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_126.nii.gz",
+            "label": "./labelsTr/marmoset_126.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_127.nii.gz",
+            "label": "./labelsTr/marmoset_127.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_128.nii.gz",
+            "label": "./labelsTr/marmoset_128.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_129.nii.gz",
+            "label": "./labelsTr/marmoset_129.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_130.nii.gz",
+            "label": "./labelsTr/marmoset_130.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_131.nii.gz",
+            "label": "./labelsTr/marmoset_131.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_132.nii.gz",
+            "label": "./labelsTr/marmoset_132.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_133.nii.gz",
+            "label": "./labelsTr/marmoset_133.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_134.nii.gz",
+            "label": "./labelsTr/marmoset_134.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_135.nii.gz",
+            "label": "./labelsTr/marmoset_135.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_136.nii.gz",
+            "label": "./labelsTr/marmoset_136.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_137.nii.gz",
+            "label": "./labelsTr/marmoset_137.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_138.nii.gz",
+            "label": "./labelsTr/marmoset_138.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_139.nii.gz",
+            "label": "./labelsTr/marmoset_139.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_140.nii.gz",
+            "label": "./labelsTr/marmoset_140.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_141.nii.gz",
+            "label": "./labelsTr/marmoset_141.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_142.nii.gz",
+            "label": "./labelsTr/marmoset_142.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_143.nii.gz",
+            "label": "./labelsTr/marmoset_143.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_144.nii.gz",
+            "label": "./labelsTr/marmoset_144.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_145.nii.gz",
+            "label": "./labelsTr/marmoset_145.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_146.nii.gz",
+            "label": "./labelsTr/marmoset_146.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_147.nii.gz",
+            "label": "./labelsTr/marmoset_147.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_148.nii.gz",
+            "label": "./labelsTr/marmoset_148.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_149.nii.gz",
+            "label": "./labelsTr/marmoset_149.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_150.nii.gz",
+            "label": "./labelsTr/marmoset_150.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_151.nii.gz",
+            "label": "./labelsTr/marmoset_151.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_152.nii.gz",
+            "label": "./labelsTr/marmoset_152.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_153.nii.gz",
+            "label": "./labelsTr/marmoset_153.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_154.nii.gz",
+            "label": "./labelsTr/marmoset_154.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_155.nii.gz",
+            "label": "./labelsTr/marmoset_155.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_156.nii.gz",
+            "label": "./labelsTr/marmoset_156.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_157.nii.gz",
+            "label": "./labelsTr/marmoset_157.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_158.nii.gz",
+            "label": "./labelsTr/marmoset_158.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_159.nii.gz",
+            "label": "./labelsTr/marmoset_159.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_160.nii.gz",
+            "label": "./labelsTr/marmoset_160.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_161.nii.gz",
+            "label": "./labelsTr/marmoset_161.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_162.nii.gz",
+            "label": "./labelsTr/marmoset_162.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_163.nii.gz",
+            "label": "./labelsTr/marmoset_163.nii.gz"
+        }
+    ]
+}

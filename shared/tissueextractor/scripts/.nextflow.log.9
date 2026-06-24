@@ -1,0 +1,751 @@
+Jun-15 00:08:27.536 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=10.8.36.23; port=2080]
+Jun-15 00:08:27.556 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: ProxyConfig[protocol=https; host=10.8.36.23; port=2080]
+Jun-15 00:08:27.557 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=10.8.36.23; port=2080]
+Jun-15 00:08:27.557 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: ProxyConfig[protocol=https; host=10.8.36.23; port=2080]
+Jun-15 00:08:27.558 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.nf -c /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config -w /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144 --bids_dir /home/weiyahui/projects/monkey/dataset/preprocess/site-princeton --participant_label sub-032144 --out_dir /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output -resume --anat_only true --bfc_method tgbfc --fix_white True --vessel_detect False --deep_white False
+Jun-15 00:08:27.619 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jun-15 00:08:27.647 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-15 00:08:27.649 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-15 00:08:27.651 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-15 00:08:27.664 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-15 00:08:27.770 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-15 00:08:27.776 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-15 00:08:27.808 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config
+Jun-15 00:08:27.810 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config
+Jun-15 00:08:27.813 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-15 00:08:27.829 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-15 00:08:28.263 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Jun-15 00:08:28.292 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-15 00:08:28.293 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-15 00:08:28.305 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jun-15 00:08:28.308 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@27e7c77f] - activable => nextflow.secret.LocalSecretsProvider@27e7c77f
+Jun-15 00:08:28.401 [main] DEBUG nextflow.Session - Session UUID: 7b82f7a3-35be-40d9-b843-da8847382f5a
+Jun-15 00:08:28.402 [main] DEBUG nextflow.Session - Run name: high_albattani
+Jun-15 00:08:28.402 [main] DEBUG nextflow.Session - Executor pool size: 80
+Jun-15 00:08:28.409 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-15 00:08:28.414 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-15 00:08:28.430 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.3 build 12259
+  Created: 28-05-2026 08:48 UTC (16:48 CDT)
+  System: Linux 5.15.0-105-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 17.0.19+10
+  Encoding: UTF-8 (UTF-8)
+  Process: 597946@job-e5d35507-3aba-4e8e-8063-48c15806d286-master-0 [172.25.102.155]
+  CPUs: 80 - Mem: 760 GB (95.1 GB) - Swap: 0 (0)
+Jun-15 00:08:28.459 [main] DEBUG nextflow.Session - Work-dir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144 [UNKNOWN (0x797083)]
+Jun-15 00:08:28.460 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/bin
+Jun-15 00:08:28.467 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-15 00:08:28.476 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-15 00:08:28.477 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-15 00:08:28.500 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-15 00:08:28.508 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+Jun-15 00:08:28.593 [main] DEBUG nextflow.Session - Session start
+Jun-15 00:08:28.597 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-15 00:08:30.904 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-15 00:08:30.980 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `per_gpu` -- Initialise it to a default value eg. `params.per_gpu = some_value`
+Jun-15 00:08:31.252 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `gpus` -- Initialise it to a default value eg. `params.gpus = some_value`
+Jun-15 00:08:31.350 [main] INFO  nextflow.Nextflow - nvidia-smi 检测到 4 GPU(s) → 索引: [0, 1, 2, 3]
+Jun-15 00:08:31.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.395 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-15 00:08:31.401 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=760 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+Jun-15 00:08:31.403 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-15 00:08:31.437 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'anat_config_init': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.485 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.486 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.487 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'info:yaml_to_tsv': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.522 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.522 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.523 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'info:init_session_dirs': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.559 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.559 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.561 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_skullstrip': maxForks=1; fair=false; array=0
+Jun-15 00:08:31.567 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.568 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.569 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_skullstrip': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.583 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.583 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.584 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_fix_brainmask': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.589 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.590 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.590 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_fixed_brainmask': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.597 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.597 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.598 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_corr_orient': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.605 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.605 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.606 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_corr_orient': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.623 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.623 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.624 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_alignment': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.638 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.639 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.639 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_average': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.648 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.648 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.649 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_conform': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.653 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.653 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.654 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_modality_register': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.658 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.658 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.659 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_modality_register': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.664 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.664 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.665 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_init_template_register': maxForks=1; fair=false; array=0
+Jun-15 00:08:31.671 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.671 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.672 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_template_register': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.677 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.678 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.678 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_tissue_segment': maxForks=1; fair=false; array=0
+Jun-15 00:08:31.684 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.684 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.685 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_tissue_segment': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.691 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.691 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.691 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_bias_field_corr': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.701 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.701 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.702 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_bias_field_corr': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.711 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.711 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.711 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_detect_vessel': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.717 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.718 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.718 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_fake_t2': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.728 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.728 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.729 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_acpc_isotropy': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.735 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.735 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.736 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_fix_wm': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.749 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.750 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.750 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:pretess': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.755 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.755 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.756 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:tessellate': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.761 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.761 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.762 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:prehires': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.767 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.768 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:whitesurf': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.772 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.773 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.773 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:pialsurf': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.778 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.778 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.779 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:prereg': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.782 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.783 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.783 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:surfreg': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.788 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.788 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.789 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:msmreg': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.796 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.796 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.797 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:acpc_ribbon': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.803 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.804 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.804 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:qc_surface': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.809 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.809 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.810 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:orig_ribbon': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.815 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.815 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.816 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:atlas_resample': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.819 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.819 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.820 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:acpc_resample': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.824 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.824 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.825 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:orig_resample': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.830 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.830 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.831 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:annot': maxForks=1; fair=false; array=0
+Jun-15 00:08:31.834 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 00:08:31.834 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 00:08:31.834 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'generate_qc_summary': maxForks=0; fair=false; array=0
+Jun-15 00:08:31.836 [main] DEBUG nextflow.Session - Process names: surface:whitesurf, prepare:qc_fixed_brainmask, bold_wf:bold_normalize, prereg, surface:pialsurf, anat_fake_t2, bold_normalize, surface:msmreg, surface:tessellate, anat_conform, annot, bold_get_func, enhance:qc_modality_register, prepare:anat_skullstrip, enhance:anat_detect_vessel, resample:annot, yaml_to_tsv, acpc_resample, anat_fix_wm, atlas_resample, info:init_session_dirs, bold_wf:bold_preprocess, info:yaml_to_tsv, anat_acpc_isotropy, prepare:anat_average, anat_corr_orient, enhance:anat_fake_t2, enhance:anat_fix_wm, msmreg, enhance:qc_tissue_segment, bold_wf:bold_confounds, anat_average, anat_config_init, bold_wf:bold_anat_prepare, enhance:qc_template_register, resample:acpc_ribbon, bold_wf:bold_get_func, anat_skullstrip, qc_bias_field_corr, enhance:anat_modality_register, pretess, surfreg, anat_fix_brainmask, qc_template_register, surface:prehires, prepare:anat_fix_brainmask, resample:atlas_resample, resample:orig_resample, anat_detect_vessel, acpc_ribbon, enhance:anat_tissue_segment, tessellate, prepare:anat_corr_orient, qc_skullstrip, surface:pretess, prepare:anat_alignment, qc_modality_register, whitesurf, enhance:anat_acpc_isotropy, qc_corr_orient, init_session_dirs, orig_resample, bold_preprocess, prepare:qc_corr_orient, surface:surfreg, bold_confounds, surface:prereg, enhance:anat_conform, anat_init_template_register, orig_ribbon, anat_alignment, enhance:qc_bias_field_corr, resample:qc_surface, pialsurf, bold_wf:bold_vol2surf, qc_bold, generate_qc_summary, resample:acpc_resample, bold_vol2surf, enhance:anat_init_template_register, anat_bias_field_corr, prehires, anat_tissue_segment, resample:orig_ribbon, bold_wf:qc_bold, enhance:anat_bias_field_corr, qc_surface, bold_anat_prepare, qc_fixed_brainmask, qc_tissue_segment, anat_modality_register, prepare:qc_skullstrip
+Jun-15 00:08:31.839 [main] DEBUG nextflow.Session - Igniting dataflow network (41)
+Jun-15 00:08:31.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > anat_config_init
+Jun-15 00:08:31.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > info:yaml_to_tsv
+Jun-15 00:08:31.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > info:init_session_dirs
+Jun-15 00:08:31.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_skullstrip
+Jun-15 00:08:31.839 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_skullstrip
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_fix_brainmask
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_fixed_brainmask
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_corr_orient
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_corr_orient
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_alignment
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_average
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_conform
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_modality_register
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_modality_register
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_init_template_register
+Jun-15 00:08:31.840 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_template_register
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_tissue_segment
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_tissue_segment
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_bias_field_corr
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_bias_field_corr
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_detect_vessel
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_fake_t2
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_acpc_isotropy
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_fix_wm
+Jun-15 00:08:31.841 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:pretess
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:tessellate
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:prehires
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:whitesurf
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:pialsurf
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:prereg
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:surfreg
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:msmreg
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:acpc_ribbon
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:qc_surface
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:orig_ribbon
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:atlas_resample
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:acpc_resample
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:orig_resample
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:annot
+Jun-15 00:08:31.842 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > generate_qc_summary
+Jun-15 00:08:31.843 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.nf
+Jun-15 00:08:31.843 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-15 00:08:31.843 [main] DEBUG nextflow.Session - Session await
+Jun-15 00:08:32.080 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:32.082 [Task submitter] INFO  nextflow.Session - [cc/65a4fd] Submitted process > anat_config_init
+Jun-15 00:08:45.930 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: anat_config_init; status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/cc/65a4fdaf0e7b8a9b03c0ddd28ccd08]
+Jun-15 00:08:45.931 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-15 00:08:45.971 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:45.971 [Task submitter] INFO  nextflow.Session - [0e/ccce25] Submitted process > info:yaml_to_tsv
+Jun-15 00:08:46.108 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: info:yaml_to_tsv; status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/0e/ccce25f38006ef65a98f33bea6cfbe]
+Jun-15 00:08:46.146 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:46.147 [Task submitter] INFO  nextflow.Session - [11/a9c792] Submitted process > info:init_session_dirs (sub-032144/ses-002)
+Jun-15 00:08:46.165 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:46.166 [Task submitter] INFO  nextflow.Session - [26/cc27af] Submitted process > info:init_session_dirs (sub-032144/ses-001)
+Jun-15 00:08:46.177 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:46.177 [Task submitter] INFO  nextflow.Session - [ed/2508ec] Submitted process > info:init_session_dirs (sub-032144/ses-003)
+Jun-15 00:08:46.179 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: info:init_session_dirs (sub-032144/ses-002); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/11/a9c7921bce98e6316f6c5812332f78]
+Jun-15 00:08:46.191 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:46.191 [Task submitter] INFO  nextflow.Session - [17/5ff9aa] Submitted process > info:init_session_dirs (sub-032144/ses-004)
+Jun-15 00:08:46.197 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: info:init_session_dirs (sub-032144/ses-001); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/26/cc27af5ad32a49eb8120b09faf03b8]
+Jun-15 00:08:46.223 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: info:init_session_dirs (sub-032144/ses-003); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/ed/2508ec5dd8b10f6a3edd78e2d8253c]
+Jun-15 00:08:46.223 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: info:init_session_dirs (sub-032144/ses-004); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/17/5ff9aa48dc9ba663121a95adc1ebfd]
+Jun-15 00:08:46.239 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:08:46.240 [Task submitter] INFO  nextflow.Session - [29/097d7f] Submitted process > prepare:anat_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:12:24.552 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: prepare:anat_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/29/097d7f0cda860de1ee47f0f4b0f7c1]
+Jun-15 00:12:24.563 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:12:24.563 [Task submitter] INFO  nextflow.Session - [e8/007e2d] Submitted process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:12:25.575 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:12:25.576 [Task submitter] INFO  nextflow.Session - [fa/1d1e6d] Submitted process > prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:12:25.587 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:12:25.587 [Task submitter] INFO  nextflow.Session - [4f/85a40b] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:12:25.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: prepare:anat_fix_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/4f/85a40b2572602b09f3a4f4453675dd]
+Jun-15 00:12:26.640 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:12:26.640 [Task submitter] INFO  nextflow.Session - [91/9c0eb2] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:12:26.653 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:12:26.653 [Task submitter] INFO  nextflow.Session - [39/4a10c3] Submitted process > prepare:anat_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:12:26.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: prepare:qc_fixed_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/91/9c0eb2be4348bf4aece58de6f6f318]
+Jun-15 00:13:31.531 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[id: 10; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/e8/007e2d95ab7db935c6d40b14589062]
+~> TaskHandler[id: 14; name: prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fa/1d1e6d45af93e0af94b0c463a8bd87]
+~> TaskHandler[id: 17; name: prepare:anat_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/39/4a10c335f381b6f003074c8237fc20]
+Jun-15 00:13:46.687 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 5 -- tasks to be submitted are shown below
+~> TaskHandler[id: 11; name: prepare:anat_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/85/ca57518298191344cce9992d3f7948]
+~> TaskHandler[id: 8; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/83/94f5a5ef55652295b939527e37a9dc]
+~> TaskHandler[id: 9; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a7/4595cdd1a34b07b52b8d04b1427172]
+~> TaskHandler[id: 13; name: prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/63/0a6635b710174ade551086c826fa73]
+~> TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:14:39.462 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: prepare:anat_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/39/4a10c335f381b6f003074c8237fc20]
+Jun-15 00:14:40.470 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:14:40.470 [Task submitter] INFO  nextflow.Session - [d7/9d28cb] Submitted process > prepare:qc_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:14:40.482 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:14:40.482 [Task submitter] INFO  nextflow.Session - [25/fe4392] Submitted process > prepare:anat_alignment (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 00:14:40.518 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: prepare:anat_alignment (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/25/fe43920af4ac0da1dc742cb4ef8134]
+Jun-15 00:16:12.952 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/e8/007e2d95ab7db935c6d40b14589062]
+Jun-15 00:16:12.959 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:16:12.960 [Task submitter] INFO  nextflow.Session - [85/ca5751] Submitted process > prepare:anat_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:16:12.973 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:16:12.973 [Task submitter] INFO  nextflow.Session - [a0/db5896] Submitted process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:18:31.557 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[id: 14; name: prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fa/1d1e6d45af93e0af94b0c463a8bd87]
+~> TaskHandler[id: 18; name: prepare:qc_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d7/9d28cb91cb1a0c523dc64002069656]
+~> TaskHandler[id: 11; name: prepare:anat_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/85/ca57518298191344cce9992d3f7948]
+~> TaskHandler[id: 20; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a0/db5896f49aa55f3db93cac01080b26]
+Jun-15 00:18:47.002 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 4 -- tasks to be submitted are shown below
+~> TaskHandler[id: 8; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/83/94f5a5ef55652295b939527e37a9dc]
+~> TaskHandler[id: 9; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a7/4595cdd1a34b07b52b8d04b1427172]
+~> TaskHandler[id: 13; name: prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/63/0a6635b710174ade551086c826fa73]
+~> TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:19:36.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: prepare:anat_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/85/ca57518298191344cce9992d3f7948]
+Jun-15 00:19:36.055 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:19:36.056 [Task submitter] INFO  nextflow.Session - [83/94f5a5] Submitted process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:19:36.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:19:36.068 [Task submitter] INFO  nextflow.Session - [9e/c8ba31] Submitted process > prepare:qc_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:23:10.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/83/94f5a5ef55652295b939527e37a9dc]
+Jun-15 00:23:10.614 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:10.614 [Task submitter] INFO  nextflow.Session - [a7/4595cd] Submitted process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:23:10.627 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:10.627 [Task submitter] INFO  nextflow.Session - [ab/3095b4] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:23:10.641 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:10.641 [Task submitter] INFO  nextflow.Session - [5c/180c53] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:23:10.653 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:10.654 [Task submitter] INFO  nextflow.Session - [8e/358f3a] Submitted process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:23:10.666 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:10.666 [Task submitter] INFO  nextflow.Session - [f2/fd822c] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:23:10.670 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/ab/3095b4c530d1853c835198446db73c]
+Jun-15 00:23:10.676 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/5c/180c535cd3b77b46da34101c7833ee]
+Jun-15 00:23:11.684 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:11.684 [Task submitter] INFO  nextflow.Session - [97/6c1859] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:23:11.697 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:11.697 [Task submitter] INFO  nextflow.Session - [d8/57b2ed] Submitted process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:23:11.709 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:11.710 [Task submitter] INFO  nextflow.Session - [7b/645774] Submitted process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:23:11.720 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/97/6c1859b89d609a4442b3ae4e5d9335]
+Jun-15 00:23:11.721 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:23:11.721 [Task submitter] INFO  nextflow.Session - [fa/cb8df2] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:23:11.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fa/cb8df2d82afad593d591649fd3850d]
+Jun-15 00:23:31.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 9 -- submitted tasks are shown below
+~> TaskHandler[id: 14; name: prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fa/1d1e6d45af93e0af94b0c463a8bd87]
+~> TaskHandler[id: 18; name: prepare:qc_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d7/9d28cb91cb1a0c523dc64002069656]
+~> TaskHandler[id: 20; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a0/db5896f49aa55f3db93cac01080b26]
+~> TaskHandler[id: 21; name: prepare:qc_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9e/c8ba318551993863bdbb0009a8eb57]
+~> TaskHandler[id: 9; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a7/4595cdd1a34b07b52b8d04b1427172]
+~> TaskHandler[id: 22; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/8e/358f3ace55a1c649295bc9ecab7209]
+~> TaskHandler[id: 24; name: prepare:anat_fix_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f2/fd822cc53918d48cd7e27a34cd83d6]
+~> TaskHandler[id: 27; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d8/57b2ed2765b21102f80c14052f6633]
+~> TaskHandler[id: 29; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/7b/6457744c9ebe128f8978f4ccc16fd4]
+Jun-15 00:23:47.760 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 13; name: prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/63/0a6635b710174ade551086c826fa73]
+~> TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:24:54.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: prepare:qc_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d7/9d28cb91cb1a0c523dc64002069656]
+Jun-15 00:24:55.855 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: prepare:qc_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9e/c8ba318551993863bdbb0009a8eb57]
+Jun-15 00:24:55.903 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/8e/358f3ace55a1c649295bc9ecab7209]
+Jun-15 00:24:55.909 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a0/db5896f49aa55f3db93cac01080b26]
+Jun-15 00:24:56.086 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fa/1d1e6d45af93e0af94b0c463a8bd87]
+Jun-15 00:25:10.202 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: prepare:anat_fix_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f2/fd822cc53918d48cd7e27a34cd83d6]
+Jun-15 00:25:11.210 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:11.210 [Task submitter] INFO  nextflow.Session - [db/1e239b] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:25:11.220 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:11.221 [Task submitter] INFO  nextflow.Session - [22/656192] Submitted process > prepare:anat_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:25:18.257 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: prepare:qc_fixed_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/db/1e239bb06cf0e421b06e0bf134fec0]
+Jun-15 00:25:21.478 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/7b/6457744c9ebe128f8978f4ccc16fd4]
+Jun-15 00:25:22.176 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d8/57b2ed2765b21102f80c14052f6633]
+Jun-15 00:25:22.185 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:22.185 [Task submitter] INFO  nextflow.Session - [64/c9cbdd] Submitted process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:25:22.197 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:22.198 [Task submitter] INFO  nextflow.Session - [67/7e4079] Submitted process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:25:22.213 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:22.214 [Task submitter] INFO  nextflow.Session - [4e/6e77c0] Submitted process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 00:25:22.224 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:25:22.224 [Task submitter] INFO  nextflow.Session - [b8/8905df] Submitted process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 00:25:22.236 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/67/7e4079733a12f37d23900330404806]
+Jun-15 00:25:24.053 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/b8/8905df2d44bd21bfe432f27e720b7c]
+Jun-15 00:25:27.736 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/64/c9cbdd31e9317dd3537d686c24aa21]
+Jun-15 00:25:27.843 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/4e/6e77c0d2db7ccd3f920781ea045cf4]
+Jun-15 00:27:02.942 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a7/4595cdd1a34b07b52b8d04b1427172]
+Jun-15 00:27:02.954 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:02.954 [Task submitter] INFO  nextflow.Session - [63/0a6635] Submitted process > prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:27:02.966 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:02.966 [Task submitter] INFO  nextflow.Session - [43/82241c] Submitted process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:27:02.976 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:02.977 [Task submitter] INFO  nextflow.Session - [35/bea759] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:27:03.026 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/35/bea759010dfde6a32e1e04c52a7788]
+Jun-15 00:27:04.032 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:04.033 [Task submitter] INFO  nextflow.Session - [73/219832] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:27:04.047 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:04.048 [Task submitter] INFO  nextflow.Session - [af/225feb] Submitted process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:27:04.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/73/219832fc8c0629947e24002c784934]
+Jun-15 00:27:09.803 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/43/82241cc72a42781758e7cec3691b8e]
+Jun-15 00:27:21.048 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: prepare:anat_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/22/6561926c0abee0b134c64415d21e15]
+Jun-15 00:27:22.056 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:22.056 [Task submitter] INFO  nextflow.Session - [75/3c43df] Submitted process > prepare:anat_alignment (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:27:22.069 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:27:22.069 [Task submitter] INFO  nextflow.Session - [bd/d558f4] Submitted process > prepare:qc_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 00:27:22.091 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: prepare:anat_alignment (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/75/3c43df42803cc74a189820e5501841]
+Jun-15 00:27:27.212 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: prepare:qc_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/bd/d558f4e33ec71bb6cb7fc21c1813c5]
+Jun-15 00:28:31.659 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[id: 13; name: prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/63/0a6635b710174ade551086c826fa73]
+~> TaskHandler[id: 39; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/af/225feb049cc5fec4885c448ba1abba]
+Jun-15 00:28:48.224 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:29:14.476 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/af/225feb049cc5fec4885c448ba1abba]
+Jun-15 00:29:15.485 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:29:15.486 [Task submitter] INFO  nextflow.Session - [2b/ab3fd9] Submitted process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:29:15.498 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:29:15.499 [Task submitter] INFO  nextflow.Session - [bc/b7aea8] Submitted process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 00:29:17.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/bc/b7aea89e4cae1f5d2239cfe658c9eb]
+Jun-15 00:29:21.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/2b/ab3fd94fc64cad3502d02560cb9bc6]
+Jun-15 00:30:42.259 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/63/0a6635b710174ade551086c826fa73]
+Jun-15 00:30:42.266 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:30:42.267 [Task submitter] INFO  nextflow.Session - [21/11e20c] Submitted process > prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:30:42.285 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:30:42.285 [Task submitter] INFO  nextflow.Session - [9d/ace846] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:30:42.297 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:30:42.297 [Task submitter] INFO  nextflow.Session - [b9/571d88] Submitted process > prepare:qc_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:30:42.334 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: prepare:anat_fix_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9d/ace84643b3e0143d7b2dd95a2ab85f]
+Jun-15 00:30:42.354 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:30:42.354 [Task submitter] INFO  nextflow.Session - [23/898747] Submitted process > prepare:anat_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:30:42.368 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:30:42.368 [Task submitter] INFO  nextflow.Session - [79/69bf8e] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:30:42.412 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: prepare:qc_fixed_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/79/69bf8e0f654b6491584a55673de1d1]
+Jun-15 00:30:49.109 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: prepare:qc_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/b9/571d885ef04671ca5b639fc0b6379a]
+Jun-15 00:33:06.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: prepare:anat_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/23/8987476fb9d67d4ebfb5784d2c6a2b]
+Jun-15 00:33:06.099 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:33:06.100 [Task submitter] INFO  nextflow.Session - [8e/802c08] Submitted process > prepare:anat_alignment (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:33:06.110 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:33:06.110 [Task submitter] INFO  nextflow.Session - [73/dde6e7] Submitted process > prepare:qc_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 00:33:06.131 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: prepare:anat_alignment (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/8e/802c0897a96d67ccc189648ab38793]
+Jun-15 00:33:10.940 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: prepare:qc_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/73/dde6e7afbfc02fadb7c76d0da2df1d]
+Jun-15 00:33:31.755 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:34:22.240 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/21/11e20c08e621000c3e9c28019d0582]
+Jun-15 00:34:22.267 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:34:22.268 [Task submitter] INFO  nextflow.Session - [4e/b0f1f4] Submitted process > prepare:qc_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:34:22.278 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:34:22.278 [Task submitter] INFO  nextflow.Session - [b5/6f3432] Submitted process > prepare:anat_fix_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:34:22.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: prepare:anat_fix_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/b5/6f34324f77f95c81388535a68d332c]
+Jun-15 00:34:22.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:34:22.346 [Task submitter] INFO  nextflow.Session - [2e/6e2800] Submitted process > prepare:anat_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:34:22.358 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:34:22.359 [Task submitter] INFO  nextflow.Session - [34/1d0b50] Submitted process > prepare:qc_fixed_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:34:22.404 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: prepare:qc_fixed_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/34/1d0b5045ec502b5e7505b0aa6f7d15]
+Jun-15 00:34:28.577 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: prepare:qc_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/4e/b0f1f4ba09c62ef57f52abe01584d9]
+Jun-15 00:36:34.178 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: prepare:anat_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/2e/6e280073e97fe3008fbee43bac159b]
+Jun-15 00:36:34.199 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.200 [Task submitter] INFO  nextflow.Session - [37/964365] Submitted process > prepare:qc_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:36:34.211 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.211 [Task submitter] INFO  nextflow.Session - [89/bdae48] Submitted process > prepare:anat_alignment (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 00:36:34.252 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: prepare:anat_alignment (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/89/bdae48c3b7976c2d35d33fbafc56ba]
+Jun-15 00:36:34.289 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.290 [Task submitter] INFO  nextflow.Session - [d8/bd35bd] Submitted process > prepare:anat_average (sub-032144/ses-003/T1)
+Jun-15 00:36:34.312 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.312 [Task submitter] INFO  nextflow.Session - [68/ba547d] Submitted process > prepare:anat_average (sub-032144/ses-001/T1)
+Jun-15 00:36:34.325 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.326 [Task submitter] INFO  nextflow.Session - [76/bc4cad] Submitted process > prepare:anat_average (sub-032144/ses-001/T2)
+Jun-15 00:36:34.337 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.337 [Task submitter] INFO  nextflow.Session - [fe/95a6a4] Submitted process > prepare:anat_average (sub-032144/ses-004/T1)
+Jun-15 00:36:34.349 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:36:34.353 [Task submitter] INFO  nextflow.Session - [f6/191a47] Submitted process > prepare:anat_average (sub-032144/ses-002/T1)
+Jun-15 00:36:41.613 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: prepare:qc_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/37/9643650d0ea149ca11c447811db0b4]
+Jun-15 00:37:32.111 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: prepare:anat_average (sub-032144/ses-001/T2); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/76/bc4cad8c706a39ac3fcb4f40601b6f]
+Jun-15 00:37:32.148 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:32.148 [Task submitter] INFO  nextflow.Session - [73/a78e48] Submitted process > enhance:anat_conform (sub-032144::ses-001::T2)
+Jun-15 00:37:36.075 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: prepare:anat_average (sub-032144/ses-004/T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/fe/95a6a4fd40c39436d801b1587d288d]
+Jun-15 00:37:36.104 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:36.104 [Task submitter] INFO  nextflow.Session - [5e/f42e22] Submitted process > enhance:anat_conform (sub-032144::ses-004::T1)
+Jun-15 00:37:36.105 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: prepare:anat_average (sub-032144/ses-003/T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/d8/bd35bdfef3283c8ee22a52c65e4259]
+Jun-15 00:37:36.124 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:36.124 [Task submitter] INFO  nextflow.Session - [a0/c10360] Submitted process > enhance:anat_conform (sub-032144::ses-003::T1)
+Jun-15 00:37:36.142 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: prepare:anat_average (sub-032144/ses-001/T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/68/ba547d12d7d599a7da283605002caa]
+Jun-15 00:37:36.166 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:36.166 [Task submitter] INFO  nextflow.Session - [9e/fea3a7] Submitted process > enhance:anat_conform (sub-032144::ses-001::T1)
+Jun-15 00:37:36.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: prepare:anat_average (sub-032144/ses-002/T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f6/191a47065c8be55bd1e014565ecfa8]
+Jun-15 00:37:36.558 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:36.558 [Task submitter] INFO  nextflow.Session - [f4/a7e9dd] Submitted process > enhance:anat_conform (sub-032144::ses-002::T1)
+Jun-15 00:37:47.636 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: enhance:anat_conform (sub-032144::ses-001::T2); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/73/a78e48e8e1942b7ea61b73e363e823]
+Jun-15 00:37:51.147 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: enhance:anat_conform (sub-032144::ses-001::T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9e/fea3a72ef740877231bff1c2ee999a]
+Jun-15 00:37:51.159 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: enhance:anat_conform (sub-032144::ses-004::T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/5e/f42e224b6ea979e8c25d9ccc2d181c]
+Jun-15 00:37:51.370 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: enhance:anat_conform (sub-032144::ses-003::T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a0/c103607e6533e9a0aaa05140a4881f]
+Jun-15 00:37:51.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: enhance:anat_conform (sub-032144::ses-002::T1); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f4/a7e9dde512a31aaa102afb49123fe6]
+Jun-15 00:37:51.434 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.435 [Task submitter] INFO  nextflow.Session - [73/9864bf] Submitted process > enhance:anat_modality_register (sub-032144::ses-003)
+Jun-15 00:37:51.450 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.450 [Task submitter] INFO  nextflow.Session - [9e/de36a2] Submitted process > enhance:anat_modality_register (sub-032144::ses-001)
+Jun-15 00:37:51.460 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.461 [Task submitter] INFO  nextflow.Session - [0e/91ff6f] Submitted process > enhance:anat_modality_register (sub-032144::ses-002)
+Jun-15 00:37:51.470 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.471 [Task submitter] INFO  nextflow.Session - [e5/ee2d2a] Submitted process > enhance:anat_modality_register (sub-032144::ses-004)
+Jun-15 00:37:51.505 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: enhance:anat_modality_register (sub-032144::ses-003); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/73/9864bf81805103e94d096cad357bb9]
+Jun-15 00:37:51.535 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.536 [Task submitter] INFO  nextflow.Session - [b6/62ba6d] Submitted process > enhance:qc_modality_register (sub-032144::ses-003)
+Jun-15 00:37:51.536 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: enhance:anat_modality_register (sub-032144::ses-002); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/0e/91ff6f1839bd58206fd0fb54484d3a]
+Jun-15 00:37:51.541 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: enhance:anat_modality_register (sub-032144::ses-004); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/e5/ee2d2a20ec88c9a09d039b1a749a8f]
+Jun-15 00:37:51.560 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.561 [Task submitter] INFO  nextflow.Session - [55/91d424] Submitted process > enhance:qc_modality_register (sub-032144::ses-002)
+Jun-15 00:37:51.581 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.582 [Task submitter] INFO  nextflow.Session - [64/700c48] Submitted process > enhance:qc_modality_register (sub-032144::ses-004)
+Jun-15 00:37:51.592 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:37:51.592 [Task submitter] INFO  nextflow.Session - [1f/d906e0] Submitted process > enhance:anat_init_template_register (sub-032144::ses-004)
+Jun-15 00:37:51.598 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 71; name: enhance:anat_init_template_register (sub-032144::ses-003); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/ae/94887df6d6d45c8a7f4cacaa455fc9]
+~> TaskHandler[id: 73; name: enhance:anat_init_template_register (sub-032144::ses-002); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/7f/690bcf5052dc313f069914ae43ff02]
+Jun-15 00:37:52.829 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: enhance:qc_modality_register (sub-032144::ses-004); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/64/700c48397b02ec7553a807d65298ac]
+Jun-15 00:37:52.902 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: enhance:qc_modality_register (sub-032144::ses-002); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/55/91d424917a7164ca260db88d38ab7b]
+Jun-15 00:37:52.909 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: enhance:qc_modality_register (sub-032144::ses-003); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/b6/62ba6dcd4f1ccc9dc84a4a2640e3c3]
+Jun-15 00:38:07.524 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: enhance:anat_modality_register (sub-032144::ses-001); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9e/de36a2771a29c1c1238d28fad2e417]
+Jun-15 00:38:08.531 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:38:08.532 [Task submitter] INFO  nextflow.Session - [9d/9bd0e6] Submitted process > enhance:qc_modality_register (sub-032144::ses-001)
+Jun-15 00:38:11.358 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: enhance:qc_modality_register (sub-032144::ses-001); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/9d/9bd0e615f172a0a6dd4b28d1922c1e]
+Jun-15 00:38:31.771 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 75; name: enhance:anat_init_template_register (sub-032144::ses-004); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/1f/d906e026f6c5383fa5e9c29cca653a]
+Jun-15 00:38:32.251 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: enhance:anat_init_template_register (sub-032144::ses-004); status: COMPLETED; exit: 1; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/1f/d906e026f6c5383fa5e9c29cca653a]
+Jun-15 00:38:32.258 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 00:38:32.259 [Task submitter] INFO  nextflow.Session - [ae/94887d] Submitted process > enhance:anat_init_template_register (sub-032144::ses-003)
+Jun-15 00:38:32.260 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=enhance:anat_init_template_register (sub-032144::ses-004); work-dir=/home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/1f/d906e026f6c5383fa5e9c29cca653a
+  error [nextflow.exception.ProcessFailedException]: Process `enhance:anat_init_template_register (sub-032144::ses-004)` terminated with an error exit status (1)
+Jun-15 00:38:32.275 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'enhance:anat_init_template_register (sub-032144::ses-004)'
+
+Caused by:
+  Process `enhance:anat_init_template_register (sub-032144::ses-004)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  bash /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/Enhance/scripts/TemplateReg.sh           --t1w_conform /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz           --t2w_conform /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T2w.nii.gz           --enhance_dir /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance           --device gpu           --script_dir /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/Enhance           --t1w_template /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_LIA.nii.gz           --t1w_template_brain /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_brain_LIA.nii.gz           --template_mask /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_brainmask_LIA.nii.gz           --t1w_template_2mm /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_1mm_brain_LIA.nii.gz           --template_2mm_mask /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_1mm_brainmask_LIA.nii.gz           --fnirt_config /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/config/T1_2_MNI_NHP.cnf           --t1w_template_atlas /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/gca_04mm_LIA.nii.gz           --wm_compliment1 /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/wm_04mm_compliment1_LIA.nii.gz           --wm_compliment2 /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/wm_04mm_compliment2_LIA.nii.gz           --gm_compliment /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/gm_04mm_compliment_LIA.nii.gz
+
+Command exit status:
+  1
+
+Command output:
+  -0.001279871	0.7395461	0.01313759	20.3152
+  -0.05419358	-0.1945703	1.562351	-26.77898
+  0	0	0	1
+  [reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  [reg_aladin_sym] Final forward transformation matrix::
+  0.9782847	0.1883638	0.02760939	-15.96895
+  -0.02299142	1.387654	-0.004016224	-29.95862
+  0.01841983	0.1236854	0.6478066	17.12712
+  0	0	0	1
+  [reg_aladin_sym] Final backward transformation matrix::
+  1.019871	-0.1344913	-0.0443005	13.01583
+  0.01680456	0.7180266	0.003735361	21.71546
+  -0.03220764	-0.1332683	1.544217	-30.95485
+  0	0	0	1
+  [reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  [reg_aladin_sym] Current level 3 / 3
+  [reg_aladin_sym] reference image size: 	141x180x124 voxels	0.5x0.5x0.5 mm
+  [reg_aladin_sym] floating image size: 	141x180x124 voxels	0.5x0.5x0.5 mm
+  [reg_aladin_sym] Block size = [4 4 4]
+  [reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  [reg_aladin_sym] Forward Block number = [36 45 31]
+  [reg_aladin_sym] Backward Block number = [36 45 31]
+  [reg_aladin_sym] Initial forward transformation matrix::
+  0.9782847	0.1883638	0.02760939	-15.96895
+  -0.02299142	1.387654	-0.004016224	-29.95862
+  0.01841983	0.1236854	0.6478066	17.12712
+  0	0	0	1
+  [reg_aladin_sym] Initial backward transformation matrix::
+  1.019871	-0.1344913	-0.0443005	13.01583
+  0.01680456	0.7180266	0.003735361	21.71546
+  -0.03220764	-0.1332683	1.544217	-30.95485
+  0	0	0	1
+  [reg_aladin_sym] * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  [reg_aladin_sym] Final forward transformation matrix::
+  0.9734973	0.1587028	0.05748233	-15.28364
+  -0.0987628	1.286382	-0.003187126	-18.50993
+  -0.0263338	0.2086041	0.6771232	10.07961
+  0	0	0	1
+  [reg_aladin_sym] Final backward transformation matrix::
+  1.01362	-0.1110131	-0.08657072	14.30956
+  0.07785956	0.768254	-0.002993586	15.44048
+  0.01543388	-0.2409965	1.474392	-19.08624
+  0	0	0	1
+  [reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  Padding value here nan
+  [reg_aladin] Registration performed in 0 min 8 sec
+  [reg_aladin] Have a good day !
+  USE_FFO: True
+  FFO_AVAILABLE: False
+  Using FFO: False
+
+Command error:
+  0.01543388	-0.2409965	1.474392	-19.08624
+  0	0	0	1
+  [reg_aladin_sym] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  Padding value here nan
+  [reg_aladin] Registration performed in 0 min 8 sec
+  [reg_aladin] Have a good day !
+  + [[ aladin == \f\s\l ]]
+  + [[ aladin == \a\l\a\d\i\n ]]
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/affine_niftyreg2fsl.py --aladin_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_init0GenericAffine.mat --fsl_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_init0GenericAffine.mat --mov /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_brain_LIA.nii.gz --trg /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/affine_niftyreg2fsl.py --aladin_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_rigid0GenericAffine.mat --fsl_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_rigid0GenericAffine.mat --mov /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_init.nii.gz --trg /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/affine_niftyreg2fsl.py --aladin_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_affine0GenericAffine.mat --fsl_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_affine0GenericAffine.mat --mov /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_rigid.nii.gz --trg /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz
+  + convert_xfm -omat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat -concat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_rigid0GenericAffine.mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_init0GenericAffine.mat
+  + convert_xfm -omat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat -concat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_affine0GenericAffine.mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/affine_fsl2itk.py --fsl_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat --ras_mat /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat --mov /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_brain_LIA.nii.gz --trg /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz
+  + doNonlinear
+  + [[ gpu == \c\p\u ]]
+  + [[ gpu == \g\p\u ]]
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python -c 'import fireants'
+  + [[ gpu == \g\p\u ]]
+  + antsApplyTransforms -d 3 -i /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/global/templates/MEBRAIN/mebrain_T1w_04mm_brain_LIA.nii.gz -r /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz -t /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_linear.mat -o /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_nonlinearInit.nii.gz
+  + /home/weiyahui/software/miniconda3/envs/macabrain/bin/python /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/fireants_nonlinear.py --fixed /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/T1w/desc-conform_T1w.nii.gz --moving /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_nonlinearInit.nii.gz --moved /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_nonlinearRes.nii.gz --warp /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-004/Enhance/MEBRAIN/orig2temp//mebrain_T1w_04mm_brain_LIA_to_desc-conform_T1w_nonlinear1Warp.nii.gz
+  /home/weiyahui/software/miniconda3/envs/macabrain/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+    import pynvml  # type: ignore[import]
+  Fused operations not available, compile the fused ops to use them
+  USE_FFO: True
+  FFO_AVAILABLE: False
+  Using FFO: False
+  WARNING:fireants.utils.imageutils:fireants_fused_ops not found, will use torch fft instead
+  WARNING:fireants.registration.optimizers.adam:Fused ops not found, using baseline implementation
+  Traceback (most recent call last):
+    File "/home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/fireants_nonlinear.py", line 58, in <module>
+      main(args=args)
+    File "/home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/shared/utils/fireants_nonlinear.py", line 13, in main
+      fixed_img = Image.load_file(args.fixed)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/weiyahui/software/miniconda3/envs/macabrain/lib/python3.12/site-packages/fireants/io/image.py", line 214, in load_file
+      return cls(itk_image, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/weiyahui/software/miniconda3/envs/macabrain/lib/python3.12/site-packages/fireants/io/image.py", line 131, in __init__
+      self.array = torch.from_numpy(itk_img).to(device, dtype)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/weiyahui/software/miniconda3/envs/macabrain/lib/python3.12/site-packages/torch/cuda/__init__.py", line 491, in _lazy_init
+      torch._C._cuda_init()
+  RuntimeError: The NVIDIA driver on your system is too old (found version 12020). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+  Exception ignored in: <function Image.__del__ at 0x7f8bef394b80>
+  Traceback (most recent call last):
+    File "/home/weiyahui/software/miniconda3/envs/macabrain/lib/python3.12/site-packages/fireants/io/image.py", line 305, in __del__
+      del self.torch2phy
+          ^^^^^^^^^^^^^^
+  AttributeError: 'Image' object has no attribute 'torch2phy'
+
+Work dir:
+  /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/1f/d906e026f6c5383fa5e9c29cca653a
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jun-15 00:38:32.284 [TaskFinalizer-4] DEBUG nextflow.Session - Session aborted -- Cause: Process `enhance:anat_init_template_register (sub-032144::ses-004)` terminated with an error exit status (1)
+Jun-15 00:38:32.304 [TaskFinalizer-4] DEBUG nextflow.Session - The following nodes are still active:
+[process] enhance:qc_template_register
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_tissue_segment
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:qc_tissue_segment
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_bias_field_corr
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:qc_bias_field_corr
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_detect_vessel
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_fake_t2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_acpc_isotropy
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_fix_wm
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:pretess
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:tessellate
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:prehires
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:whitesurf
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:pialsurf
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:prereg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:surfreg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:msmreg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:acpc_ribbon
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:qc_surface
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] resample:orig_ribbon
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:atlas_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:acpc_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:orig_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:annot
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] generate_qc_summary
+  status=ACTIVE
+  port 0: (value) bound ; channel: qc_dir
+  port 1: (queue) OPEN  ; channel: sub_qc_out
+  port 2: (cntrl) -     ; channel: $
+
+Jun-15 00:38:32.311 [TaskFinalizer-4] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Jun-15 00:38:32.322 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-15 00:38:32.336 [TaskFinalizer-4] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=73; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=1h 29m 54s; failedDuration=40.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=10; peakCpus=10; peakMemory=400 MB; ]
+Jun-15 00:38:32.339 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-15 00:38:32.339 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-15 00:38:32.341 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=73; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=1h 29m 54s; failedDuration=40.6s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=10; peakCpus=10; peakMemory=400 MB; ]
+Jun-15 00:38:32.367 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-15 00:38:32.387 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

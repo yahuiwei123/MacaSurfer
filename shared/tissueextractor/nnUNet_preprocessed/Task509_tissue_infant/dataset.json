@@ -1,0 +1,175 @@
+{
+    "description": "",
+    "labels": {
+        "0": "background",
+        "1": "CSF",
+        "2": "GM",
+        "3": "WM",
+        "4": "Cere"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "T1"
+    },
+    "name": "Task509_tissue_infant",
+    "numTest": 0,
+    "numTraining": 38,
+    "reference": "",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "test": [],
+    "training": [
+        {
+            "image": "./imagesTr/macaque_003.nii.gz",
+            "label": "./labelsTr/macaque_003.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_004.nii.gz",
+            "label": "./labelsTr/macaque_004.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_005.nii.gz",
+            "label": "./labelsTr/macaque_005.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_006.nii.gz",
+            "label": "./labelsTr/macaque_006.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_007.nii.gz",
+            "label": "./labelsTr/macaque_007.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_008.nii.gz",
+            "label": "./labelsTr/macaque_008.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_009.nii.gz",
+            "label": "./labelsTr/macaque_009.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_010.nii.gz",
+            "label": "./labelsTr/macaque_010.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_011.nii.gz",
+            "label": "./labelsTr/macaque_011.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_012.nii.gz",
+            "label": "./labelsTr/macaque_012.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_013.nii.gz",
+            "label": "./labelsTr/macaque_013.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_014.nii.gz",
+            "label": "./labelsTr/macaque_014.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_015.nii.gz",
+            "label": "./labelsTr/macaque_015.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_016.nii.gz",
+            "label": "./labelsTr/macaque_016.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_017.nii.gz",
+            "label": "./labelsTr/macaque_017.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_018.nii.gz",
+            "label": "./labelsTr/macaque_018.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_019.nii.gz",
+            "label": "./labelsTr/macaque_019.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_020.nii.gz",
+            "label": "./labelsTr/macaque_020.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_021.nii.gz",
+            "label": "./labelsTr/macaque_021.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_022.nii.gz",
+            "label": "./labelsTr/macaque_022.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_023.nii.gz",
+            "label": "./labelsTr/macaque_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_024.nii.gz",
+            "label": "./labelsTr/macaque_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_025.nii.gz",
+            "label": "./labelsTr/macaque_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_026.nii.gz",
+            "label": "./labelsTr/macaque_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_027.nii.gz",
+            "label": "./labelsTr/macaque_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_028.nii.gz",
+            "label": "./labelsTr/macaque_028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_029.nii.gz",
+            "label": "./labelsTr/macaque_029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_030.nii.gz",
+            "label": "./labelsTr/macaque_030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_031.nii.gz",
+            "label": "./labelsTr/macaque_031.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_023.nii.gz",
+            "label": "./labelsTr/rhesus_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_024.nii.gz",
+            "label": "./labelsTr/rhesus_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_025.nii.gz",
+            "label": "./labelsTr/rhesus_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_026.nii.gz",
+            "label": "./labelsTr/rhesus_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_027.nii.gz",
+            "label": "./labelsTr/rhesus_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_028.nii.gz",
+            "label": "./labelsTr/rhesus_028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_029.nii.gz",
+            "label": "./labelsTr/rhesus_029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_030.nii.gz",
+            "label": "./labelsTr/rhesus_030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/rhesus_031.nii.gz",
+            "label": "./labelsTr/rhesus_031.nii.gz"
+        }
+    ]
+}

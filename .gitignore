@@ -1,0 +1,41 @@
+# Nextflow
+.nextflow/
+work/
+output/
+WorkDir/
+*.pklz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Compiled extensions
+shared/surf_fireants/fused_ops/build/
+
+# IDE / editor
+.claude/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~
+
+# Large model files (>100MB) — download separately with download_models.sh
+shared/brainextractor/macaUNet/models/
+shared/tissueextractor/nnUNet_trained_models/
+global/templates/MEBRAIN/RB_all_2020-01-02.gca
+
+# Figures (user-provided, may be large .tif)
+figures/*.tif
+!figures/.gitkeep

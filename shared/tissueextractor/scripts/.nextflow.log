@@ -1,0 +1,581 @@
+Jun-15 01:52:37.241 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=10.8.36.23; port=2080]
+Jun-15 01:52:37.305 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: ProxyConfig[protocol=https; host=10.8.36.23; port=2080]
+Jun-15 01:52:37.305 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=10.8.36.23; port=2080]
+Jun-15 01:52:37.306 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: ProxyConfig[protocol=https; host=10.8.36.23; port=2080]
+Jun-15 01:52:37.306 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.nf -c /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config -w /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144 --bids_dir /home/weiyahui/projects/monkey/dataset/preprocess/site-princeton --participant_label sub-032144 --out_dir /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output -resume --anat_only true --bfc_method tgbfc --fix_white True --vessel_detect False --deep_white False
+Jun-15 01:52:37.381 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@3.9.1,nf-azure@1.22.5,nf-cloudcache@0.6.0,nf-codecommit@0.5.2,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.20.1,nf-tower@1.28.0,nf-wave@1.21.0
+Jun-15 01:52:37.403 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-15 01:52:37.405 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-15 01:52:37.407 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Jun-15 01:52:37.419 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jun-15 01:52:37.527 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Jun-15 01:52:37.533 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jun-15 01:52:37.563 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config
+Jun-15 01:52:37.564 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.common.config
+Jun-15 01:52:37.568 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Jun-15 01:52:37.583 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-15 01:52:38.047 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-15 01:52:38.047 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jun-15 01:52:38.061 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jun-15 01:52:38.064 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@177515d1] - activable => nextflow.secret.LocalSecretsProvider@177515d1
+Jun-15 01:52:38.165 [main] DEBUG nextflow.Session - Session UUID: 7b82f7a3-35be-40d9-b843-da8847382f5a
+Jun-15 01:52:38.165 [main] DEBUG nextflow.Session - Run name: lonely_cajal
+Jun-15 01:52:38.166 [main] DEBUG nextflow.Session - Executor pool size: 80
+Jun-15 01:52:38.174 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jun-15 01:52:38.179 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-15 01:52:38.197 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.3 build 12259
+  Created: 28-05-2026 08:48 UTC (16:48 CDT)
+  System: Linux 5.15.0-105-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 17.0.19+10
+  Encoding: UTF-8 (UTF-8)
+  Process: 677141@job-e5d35507-3aba-4e8e-8063-48c15806d286-master-0 [172.25.102.155]
+  CPUs: 80 - Mem: 760 GB (94.4 GB) - Swap: 0 (0)
+Jun-15 01:52:38.232 [main] DEBUG nextflow.Session - Work-dir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144 [UNKNOWN (0x797083)]
+Jun-15 01:52:38.232 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/bin
+Jun-15 01:52:38.240 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-15 01:52:38.248 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jun-15 01:52:38.250 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Jun-15 01:52:38.273 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jun-15 01:52:38.280 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 81; maxThreads: 1000
+Jun-15 01:52:38.391 [main] DEBUG nextflow.Session - Session start
+Jun-15 01:52:38.395 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Jun-15 01:52:40.581 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-15 01:52:40.665 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `per_gpu` -- Initialise it to a default value eg. `params.per_gpu = some_value`
+Jun-15 01:52:40.903 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `gpus` -- Initialise it to a default value eg. `params.gpus = some_value`
+Jun-15 01:52:41.057 [main] INFO  nextflow.Nextflow - nvidia-smi 检测到 4 GPU(s) → 索引: [0, 1, 2, 3]
+Jun-15 01:52:41.091 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.091 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.098 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-15 01:52:41.104 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=80; memory=760 GB; capacity=80; pollInterval=100ms; dumpInterval=5m
+Jun-15 01:52:41.106 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jun-15 01:52:41.138 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'anat_config_init': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.184 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.184 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.185 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'info:yaml_to_tsv': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.218 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.218 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.219 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'info:init_session_dirs': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.254 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.256 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_skullstrip': maxForks=1; fair=false; array=0
+Jun-15 01:52:41.262 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.262 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.263 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_skullstrip': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.277 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.277 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.278 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_fix_brainmask': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.285 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.285 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.285 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_fixed_brainmask': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.292 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.292 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.293 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_corr_orient': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.299 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.299 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.300 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:qc_corr_orient': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.317 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.317 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.318 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_alignment': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.331 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.332 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.332 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'prepare:anat_average': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.341 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.341 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.341 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_conform': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.345 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.345 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.346 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_modality_register': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.351 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.351 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.351 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_modality_register': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.356 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.357 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.357 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_init_template_register': maxForks=1; fair=false; array=0
+Jun-15 01:52:41.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.364 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.365 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_template_register': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.370 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.370 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.371 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_tissue_segment': maxForks=1; fair=false; array=0
+Jun-15 01:52:41.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.378 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_tissue_segment': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.384 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.384 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.384 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_bias_field_corr': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.393 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.393 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.394 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:qc_bias_field_corr': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.402 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.402 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.403 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_detect_vessel': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.408 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.408 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.409 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_fake_t2': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.418 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.418 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.418 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_acpc_isotropy': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.424 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.424 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.424 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'enhance:anat_fix_wm': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.436 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.437 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.437 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:pretess': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.441 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.442 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.442 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:tessellate': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.446 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.447 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.447 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:prehires': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.452 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.452 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.453 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:whitesurf': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.457 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.457 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.458 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:pialsurf': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.462 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.462 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.462 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:prereg': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.466 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.466 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.467 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:surfreg': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.471 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.471 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.472 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'surface:msmreg': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.478 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.478 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.478 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:acpc_ribbon': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.484 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.484 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.484 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:qc_surface': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.489 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.489 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.489 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:orig_ribbon': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.494 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.494 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.495 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:atlas_resample': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.498 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.498 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.499 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:acpc_resample': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.503 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.503 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:orig_resample': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.508 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.508 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.509 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'resample:annot': maxForks=1; fair=false; array=0
+Jun-15 01:52:41.512 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jun-15 01:52:41.512 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-15 01:52:41.513 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'generate_qc_summary': maxForks=0; fair=false; array=0
+Jun-15 01:52:41.515 [main] DEBUG nextflow.Session - Process names: surface:whitesurf, prepare:qc_fixed_brainmask, bold_wf:bold_normalize, prereg, surface:pialsurf, anat_fake_t2, bold_normalize, surface:msmreg, surface:tessellate, anat_conform, annot, bold_get_func, enhance:qc_modality_register, prepare:anat_skullstrip, enhance:anat_detect_vessel, resample:annot, yaml_to_tsv, acpc_resample, anat_fix_wm, atlas_resample, info:init_session_dirs, bold_wf:bold_preprocess, info:yaml_to_tsv, anat_acpc_isotropy, prepare:anat_average, anat_corr_orient, enhance:anat_fake_t2, enhance:anat_fix_wm, msmreg, enhance:qc_tissue_segment, bold_wf:bold_confounds, anat_average, anat_config_init, bold_wf:bold_anat_prepare, enhance:qc_template_register, resample:acpc_ribbon, bold_wf:bold_get_func, anat_skullstrip, qc_bias_field_corr, enhance:anat_modality_register, pretess, surfreg, anat_fix_brainmask, qc_template_register, surface:prehires, prepare:anat_fix_brainmask, resample:atlas_resample, resample:orig_resample, anat_detect_vessel, acpc_ribbon, enhance:anat_tissue_segment, tessellate, prepare:anat_corr_orient, qc_skullstrip, surface:pretess, prepare:anat_alignment, qc_modality_register, whitesurf, enhance:anat_acpc_isotropy, qc_corr_orient, init_session_dirs, orig_resample, bold_preprocess, prepare:qc_corr_orient, surface:surfreg, bold_confounds, surface:prereg, enhance:anat_conform, anat_init_template_register, orig_ribbon, anat_alignment, enhance:qc_bias_field_corr, resample:qc_surface, pialsurf, bold_wf:bold_vol2surf, qc_bold, generate_qc_summary, resample:acpc_resample, bold_vol2surf, enhance:anat_init_template_register, anat_bias_field_corr, prehires, anat_tissue_segment, resample:orig_ribbon, bold_wf:qc_bold, enhance:anat_bias_field_corr, qc_surface, bold_anat_prepare, qc_fixed_brainmask, qc_tissue_segment, anat_modality_register, prepare:qc_skullstrip
+Jun-15 01:52:41.518 [main] DEBUG nextflow.Session - Igniting dataflow network (41)
+Jun-15 01:52:41.518 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > anat_config_init
+Jun-15 01:52:41.518 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > info:yaml_to_tsv
+Jun-15 01:52:41.518 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > info:init_session_dirs
+Jun-15 01:52:41.518 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_skullstrip
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_skullstrip
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_fix_brainmask
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_fixed_brainmask
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_corr_orient
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:qc_corr_orient
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_alignment
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > prepare:anat_average
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_conform
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_modality_register
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_modality_register
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_init_template_register
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_template_register
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_tissue_segment
+Jun-15 01:52:41.519 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_tissue_segment
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_bias_field_corr
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:qc_bias_field_corr
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_detect_vessel
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_fake_t2
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_acpc_isotropy
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > enhance:anat_fix_wm
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:pretess
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:tessellate
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:prehires
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:whitesurf
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:pialsurf
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:prereg
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:surfreg
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > surface:msmreg
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:acpc_ribbon
+Jun-15 01:52:41.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:qc_surface
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:orig_ribbon
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:atlas_resample
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:acpc_resample
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:orig_resample
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > resample:annot
+Jun-15 01:52:41.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > generate_qc_summary
+Jun-15 01:52:41.521 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/macasurfer.nf
+Jun-15 01:52:41.521 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jun-15 01:52:41.521 [main] DEBUG nextflow.Session - Session await
+Jun-15 01:52:41.758 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [cc/65a4fd] Cached process > anat_config_init
+Jun-15 01:52:41.784 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [0e/ccce25] Cached process > info:yaml_to_tsv
+Jun-15 01:52:41.798 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [17/5ff9aa] Cached process > info:init_session_dirs (sub-032144/ses-004)
+Jun-15 01:52:41.798 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [ed/2508ec] Cached process > info:init_session_dirs (sub-032144/ses-003)
+Jun-15 01:52:41.799 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [11/a9c792] Cached process > info:init_session_dirs (sub-032144/ses-002)
+Jun-15 01:52:41.799 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [26/cc27af] Cached process > info:init_session_dirs (sub-032144/ses-001)
+Jun-15 01:52:41.842 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [85/ca5751] Cached process > prepare:anat_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.842 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [29/097d7f] Cached process > prepare:anat_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.843 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [e8/007e2d] Cached process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.843 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [63/0a6635] Cached process > prepare:anat_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.844 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [21/11e20c] Cached process > prepare:anat_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.844 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [83/94f5a5] Cached process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.844 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [a7/4595cd] Cached process > prepare:anat_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.864 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [9e/c8ba31] Cached process > prepare:qc_skullstrip (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.864 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [8e/358f3a] Cached process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.877 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [4e/b0f1f4] Cached process > prepare:qc_skullstrip (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.878 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [43/82241c] Cached process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.878 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [a0/db5896] Cached process > prepare:qc_skullstrip (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.878 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [fa/1d1e6d] Cached process > prepare:qc_skullstrip (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.878 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [b9/571d88] Cached process > prepare:qc_skullstrip (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.883 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [4f/85a40b] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.883 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [9d/ace846] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.883 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [5c/180c53] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.884 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [35/bea759] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.884 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [ab/3095b4] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.885 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [f2/fd822c] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.885 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [b5/6f3432] Cached process > prepare:anat_fix_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.915 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [fa/cb8df2] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.915 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [97/6c1859] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.916 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [79/69bf8e] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.917 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [91/9c0eb2] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.918 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [22/656192] Cached process > prepare:anat_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.918 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [7b/645774] Cached process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.918 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [db/1e239b] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.919 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [34/1d0b50] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.919 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [73/219832] Cached process > prepare:qc_fixed_brainmask (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.919 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [39/4a10c3] Cached process > prepare:anat_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.920 [Actor Thread 73] INFO  nextflow.processor.TaskProcessor - [23/898747] Cached process > prepare:anat_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.920 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [2e/6e2800] Cached process > prepare:anat_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.920 [Actor Thread 81] INFO  nextflow.processor.TaskProcessor - [af/225feb] Cached process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.920 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [d8/57b2ed] Cached process > prepare:anat_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.936 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [d7/9d28cb] Cached process > prepare:qc_corr_orient (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.937 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [64/c9cbdd] Cached process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.937 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [73/dde6e7] Cached process > prepare:qc_corr_orient (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.937 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [37/964365] Cached process > prepare:qc_corr_orient (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.938 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [bd/d558f4] Cached process > prepare:qc_corr_orient (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.939 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [2b/ab3fd9] Cached process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.939 [Actor Thread 70] INFO  nextflow.processor.TaskProcessor - [4e/6e77c0] Cached process > prepare:qc_corr_orient (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.942 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [67/7e4079] Cached process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-1_T1w)
+Jun-15 01:52:41.943 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [b8/8905df] Cached process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-3_T1w)
+Jun-15 01:52:41.943 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [bc/b7aea8] Cached process > prepare:anat_alignment (sub-032144/ses-001/T1/sub-032144_ses-001_run-2_T1w)
+Jun-15 01:52:41.943 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [89/bdae48] Cached process > prepare:anat_alignment (sub-032144/ses-003/T1/sub-032144_ses-003_run-1_T1w)
+Jun-15 01:52:41.944 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [25/fe4392] Cached process > prepare:anat_alignment (sub-032144/ses-002/T1/sub-032144_ses-002_run-1_T1w)
+Jun-15 01:52:41.944 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [8e/802c08] Cached process > prepare:anat_alignment (sub-032144/ses-004/T1/sub-032144_ses-004_run-1_T1w)
+Jun-15 01:52:41.944 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [75/3c43df] Cached process > prepare:anat_alignment (sub-032144/ses-001/T2/sub-032144_ses-001_run-1_T2w)
+Jun-15 01:52:41.966 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [fe/95a6a4] Cached process > prepare:anat_average (sub-032144/ses-004/T1)
+Jun-15 01:52:41.966 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [76/bc4cad] Cached process > prepare:anat_average (sub-032144/ses-001/T2)
+Jun-15 01:52:41.966 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [f6/191a47] Cached process > prepare:anat_average (sub-032144/ses-002/T1)
+Jun-15 01:52:41.966 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [d8/bd35bd] Cached process > prepare:anat_average (sub-032144/ses-003/T1)
+Jun-15 01:52:41.969 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [68/ba547d] Cached process > prepare:anat_average (sub-032144/ses-001/T1)
+Jun-15 01:52:41.984 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [73/a78e48] Cached process > enhance:anat_conform (sub-032144::ses-001::T2)
+Jun-15 01:52:41.984 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [f4/a7e9dd] Cached process > enhance:anat_conform (sub-032144::ses-002::T1)
+Jun-15 01:52:41.984 [Actor Thread 76] INFO  nextflow.processor.TaskProcessor - [a0/c10360] Cached process > enhance:anat_conform (sub-032144::ses-003::T1)
+Jun-15 01:52:41.984 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [5e/f42e22] Cached process > enhance:anat_conform (sub-032144::ses-004::T1)
+Jun-15 01:52:41.984 [Actor Thread 74] INFO  nextflow.processor.TaskProcessor - [9e/fea3a7] Cached process > enhance:anat_conform (sub-032144::ses-001::T1)
+Jun-15 01:52:42.001 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [e5/ee2d2a] Cached process > enhance:anat_modality_register (sub-032144::ses-004)
+Jun-15 01:52:42.001 [Actor Thread 62] INFO  nextflow.processor.TaskProcessor - [0e/91ff6f] Cached process > enhance:anat_modality_register (sub-032144::ses-002)
+Jun-15 01:52:42.002 [Actor Thread 77] INFO  nextflow.processor.TaskProcessor - [9e/de36a2] Cached process > enhance:anat_modality_register (sub-032144::ses-001)
+Jun-15 01:52:42.002 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [73/9864bf] Cached process > enhance:anat_modality_register (sub-032144::ses-003)
+Jun-15 01:52:42.019 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [b6/62ba6d] Cached process > enhance:qc_modality_register (sub-032144::ses-003)
+Jun-15 01:52:42.019 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [9d/9bd0e6] Cached process > enhance:qc_modality_register (sub-032144::ses-001)
+Jun-15 01:52:42.019 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [55/91d424] Cached process > enhance:qc_modality_register (sub-032144::ses-002)
+Jun-15 01:52:42.019 [Actor Thread 67] INFO  nextflow.processor.TaskProcessor - [64/700c48] Cached process > enhance:qc_modality_register (sub-032144::ses-004)
+Jun-15 01:52:42.046 [Actor Thread 71] INFO  nextflow.processor.TaskProcessor - [31/d39728] Cached process > enhance:anat_init_template_register (sub-032144::ses-003)
+Jun-15 01:52:42.102 [Actor Thread 68] INFO  nextflow.processor.TaskProcessor - [a4/274df9] Cached process > enhance:qc_template_register (sub-032144::ses-003)
+Jun-15 01:52:42.108 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [aa/802a5d] Cached process > enhance:anat_tissue_segment (sub-032144::ses-003)
+Jun-15 01:52:42.124 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [0f/24d3fa] Cached process > enhance:qc_tissue_segment (sub-032144::ses-003)
+Jun-15 01:52:42.130 [Actor Thread 61] INFO  nextflow.processor.TaskProcessor - [26/1644a0] Cached process > enhance:anat_bias_field_corr (sub-032144::ses-003)
+Jun-15 01:52:42.144 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [e6/f25bd6] Cached process > enhance:qc_bias_field_corr (sub-032144::ses-003)
+Jun-15 01:52:42.150 [Actor Thread 65] INFO  nextflow.processor.TaskProcessor - [27/f14847] Cached process > enhance:anat_detect_vessel (sub-032144::ses-003)
+Jun-15 01:52:42.159 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 01:52:42.160 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [18/b863cb] Cached process > enhance:anat_fake_t2 (sub-032144::ses-003)
+Jun-15 01:52:42.160 [Task submitter] INFO  nextflow.Session - [36/74d596] Submitted process > enhance:anat_init_template_register (sub-032144::ses-002)
+Jun-15 01:52:42.182 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [8a/f2022e] Cached process > enhance:anat_acpc_isotropy (sub-032144::ses-003)
+Jun-15 01:52:42.203 [Actor Thread 79] INFO  nextflow.processor.TaskProcessor - [10/c7d377] Cached process > enhance:anat_fix_wm (sub-032144::ses-003)
+Jun-15 01:52:43.180 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 01:52:43.181 [Task submitter] INFO  nextflow.Session - [4b/40ac4b] Submitted process > surface:pretess (sub-032144::ses-003)
+Jun-15 01:56:18.238 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 87; name: surface:pretess (sub-032144::ses-003); status: COMPLETED; exit: 0; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/4b/40ac4b2b8d9c7c149377a850dbec81]
+Jun-15 01:56:18.238 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=240; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jun-15 01:56:19.247 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 01:56:19.247 [Task submitter] INFO  nextflow.Session - [a4/cd45cf] Submitted process > surface:tessellate (sub-032144::ses-003::lh)
+Jun-15 01:56:19.262 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-15 01:56:19.263 [Task submitter] INFO  nextflow.Session - [69/740f4f] Submitted process > surface:tessellate (sub-032144::ses-003::rh)
+Jun-15 01:57:41.234 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[id: 72; name: enhance:anat_init_template_register (sub-032144::ses-002); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/36/74d5968d1a92fd964d1cb884d2e342]
+~> TaskHandler[id: 88; name: surface:tessellate (sub-032144::ses-003::lh); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/a4/cd45cf30e578b38365ba46940de26a]
+~> TaskHandler[id: 89; name: surface:tessellate (sub-032144::ses-003::rh); status: RUNNING; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/69/740f4fda7dc34aec6a5e3969c6b5e3]
+Jun-15 01:57:42.284 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 2 -- tasks to be submitted are shown below
+~> TaskHandler[id: 70; name: enhance:anat_init_template_register (sub-032144::ses-004); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f7/ad14c5b1be7b32ff9aefd2d8acf967]
+~> TaskHandler[id: 75; name: enhance:anat_init_template_register (sub-032144::ses-001); status: NEW; exit: -; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/f2/ac71c2ddd466fbd3f9ee8fdf91c34c]
+Jun-15 02:02:07.565 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 89; name: surface:tessellate (sub-032144::ses-003::rh); status: COMPLETED; exit: 1; error: -; workDir: /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/69/740f4fda7dc34aec6a5e3969c6b5e3]
+Jun-15 02:02:07.576 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=surface:tessellate (sub-032144::ses-003::rh); work-dir=/home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/69/740f4fda7dc34aec6a5e3969c6b5e3
+  error [nextflow.exception.ProcessFailedException]: Process `surface:tessellate (sub-032144::ses-003::rh)` terminated with an error exit status (1)
+Jun-15 02:02:07.588 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'surface:tessellate (sub-032144::ses-003::rh)'
+
+Caused by:
+  Process `surface:tessellate (sub-032144::ses-003::rh)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  bash /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/nextflow/Surface/scripts/Tessellation.sh           --subject_dir /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface           --subject_id workspace           --hemi rh
+
+Command exit status:
+  1
+
+Command output:
+   mris->useRealRAS=0
+  18 non-cortical segments detected
+  only using segment with 8169 vertices
+  erasing segment 0 (vno[0] = 33979)
+  erasing segment 2 (vno[0] = 60854)
+  erasing segment 3 (vno[0] = 62634)
+  erasing segment 4 (vno[0] = 65780)
+  erasing segment 5 (vno[0] = 70525)
+  erasing segment 6 (vno[0] = 72342)
+  erasing segment 7 (vno[0] = 80979)
+  erasing segment 8 (vno[0] = 85767)
+  erasing segment 9 (vno[0] = 86435)
+  erasing segment 10 (vno[0] = 87006)
+  erasing segment 11 (vno[0] = 89961)
+  erasing segment 12 (vno[0] = 91421)
+  erasing segment 13 (vno[0] = 92084)
+  erasing segment 14 (vno[0] = 93789)
+  erasing segment 15 (vno[0] = 110177)
+  erasing segment 16 (vno[0] = 110250)
+  erasing segment 17 (vno[0] = 110296)
+  Writing cortical label to /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label
+  writing smoothed curvature to rh.curv
+  writing curvature file /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.curv type -1
+  writing smoothed area to rh.area
+  writing curvature file /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.area type -1
+  refinement took 3.4 minutes
+  #VMPC# mris_make_surfaces VmPeak  4173024
+  Reading ctab /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+  Number of ctab entries 15138
+  
+  8.1.0
+  cwd /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf
+  cmdline mris_label2annot --s workspace --h rh --l /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label --a aparc --ctab /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt --sd /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface 
+  sysname  Linux
+  hostname job-e5d35507-3aba-4e8e-8063-48c15806d286-master-0
+  machine  x86_64
+  user     root
+  
+  subject workspace
+  hemi    rh
+  SUBJECTS_DIR /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface
+  ColorTable /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+  AnnotName  aparc
+  nlables 1
+  LabelThresh 0 0.000000
+  Loading /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.orig
+  set_atable_from_ctable(): 15138 entries
+  convert labels to annotation with label2annotationV2() ...
+   0 reading /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label
+  ERROR: cortex not found in CTAB /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+
+Command error:
+  erasing segment 2 (vno[0] = 60854)
+  erasing segment 3 (vno[0] = 62634)
+  erasing segment 4 (vno[0] = 65780)
+  erasing segment 5 (vno[0] = 70525)
+  erasing segment 6 (vno[0] = 72342)
+  erasing segment 7 (vno[0] = 80979)
+  erasing segment 8 (vno[0] = 85767)
+  erasing segment 9 (vno[0] = 86435)
+  erasing segment 10 (vno[0] = 87006)
+  erasing segment 11 (vno[0] = 89961)
+  erasing segment 12 (vno[0] = 91421)
+  erasing segment 13 (vno[0] = 92084)
+  erasing segment 14 (vno[0] = 93789)
+  erasing segment 15 (vno[0] = 110177)
+  erasing segment 16 (vno[0] = 110250)
+  erasing segment 17 (vno[0] = 110296)
+  Writing cortical label to /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label
+  writing smoothed curvature to rh.curv
+  writing curvature file /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.curv type -1
+  writing smoothed area to rh.area
+  vertex spacing 0.92 +- 0.23 (0.02-->10.37) (max @ vno 68923 --> 69753)
+  face area 0.36 +- 0.15 (0.00-->8.97)
+  writing curvature file /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.area type -1
+  refinement took 3.4 minutes
+  #VMPC# mris_make_surfaces VmPeak  4173024
+  + [[ -e /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.aparc.annot ]]
+  + mris_label2annot --s workspace --h rh --l /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label --a aparc --ctab /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt --sd /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface
+  Reading ctab /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+  Number of ctab entries 15138
+  
+  8.1.0
+  cwd /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf
+  cmdline mris_label2annot --s workspace --h rh --l /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label --a aparc --ctab /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt --sd /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface 
+  sysname  Linux
+  hostname job-e5d35507-3aba-4e8e-8063-48c15806d286-master-0
+  machine  x86_64
+  user     root
+  
+  subject workspace
+  hemi    rh
+  SUBJECTS_DIR /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface
+  ColorTable /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+  AnnotName  aparc
+  nlables 1
+  LabelThresh 0 0.000000
+  Loading /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/surf/rh.orig
+  set_atable_from_ctable(): 15138 entries
+  convert labels to annotation with label2annotationV2() ...
+   0 reading /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_output/sub-032144/ses-003/Surface/workspace/label/rh.cortex.label
+  ERROR: cortex not found in CTAB /home/weiyahui/software/freesurfer-8.1.0/FreeSurferColorLUT.txt
+
+Work dir:
+  /home/weiyahui/projects/monkey/macasurfer_v3.0/MacaSurfer/test_work/sub-032144/69/740f4fda7dc34aec6a5e3969c6b5e3
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Jun-15 02:02:07.597 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `surface:tessellate (sub-032144::ses-003::rh)` terminated with an error exit status (1)
+Jun-15 02:02:07.614 [TaskFinalizer-2] DEBUG nextflow.Session - The following nodes are still active:
+[process] enhance:qc_template_register
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_tissue_segment
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:qc_tissue_segment
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_bias_field_corr
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:qc_bias_field_corr
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] enhance:anat_detect_vessel
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_fake_t2
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_acpc_isotropy
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] enhance:anat_fix_wm
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:pretess
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:tessellate
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:prehires
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:whitesurf
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:pialsurf
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:prereg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:surfreg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] surface:msmreg
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:acpc_ribbon
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:qc_surface
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] resample:orig_ribbon
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:atlas_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:acpc_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:orig_resample
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] resample:annot
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: qc_dir
+  port 2: (cntrl) -     ; channel: $
+
+[process] generate_qc_summary
+  status=ACTIVE
+  port 0: (value) bound ; channel: qc_dir
+  port 1: (queue) OPEN  ; channel: sub_qc_out
+  port 2: (cntrl) -     ; channel: $
+
+Jun-15 02:02:07.621 [TaskFinalizer-2] WARN  n.processor.TaskPollingMonitor - Killing running tasks (2)
+Jun-15 02:02:07.646 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jun-15 02:02:07.647 [TaskFinalizer-2] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=83; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=3m 35s; failedDuration=11m 36s; cachedDuration=2h 34s;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=5; peakMemory=0; ]
+Jun-15 02:02:07.650 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jun-15 02:02:07.650 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-15 02:02:07.652 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=83; pendingCount=2; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=3m 35s; failedDuration=11m 36s; cachedDuration=2h 34s;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=5; peakMemory=0; ]
+Jun-15 02:02:07.713 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jun-15 02:02:07.735 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,546 @@
+{
+    "description": "",
+    "labels": {
+        "0": "background",
+        "1": "csf",
+        "2": "GM",
+        "3": "Wm"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "T1"
+    },
+    "name": "Task510_multi_species",
+    "numTest": 0,
+    "numTraining": 131,
+    "reference": "",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "test": [],
+    "training": [
+        {
+            "image": "./imagesTr/chimpanzee151_001.nii.gz",
+            "label": "./labelsTr/chimpanzee151_001.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_002.nii.gz",
+            "label": "./labelsTr/chimpanzee151_002.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_003.nii.gz",
+            "label": "./labelsTr/chimpanzee151_003.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_004.nii.gz",
+            "label": "./labelsTr/chimpanzee151_004.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_005.nii.gz",
+            "label": "./labelsTr/chimpanzee151_005.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_006.nii.gz",
+            "label": "./labelsTr/chimpanzee151_006.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_007.nii.gz",
+            "label": "./labelsTr/chimpanzee151_007.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_008.nii.gz",
+            "label": "./labelsTr/chimpanzee151_008.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_009.nii.gz",
+            "label": "./labelsTr/chimpanzee151_009.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_010.nii.gz",
+            "label": "./labelsTr/chimpanzee151_010.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_011.nii.gz",
+            "label": "./labelsTr/chimpanzee151_011.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_012.nii.gz",
+            "label": "./labelsTr/chimpanzee151_012.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_013.nii.gz",
+            "label": "./labelsTr/chimpanzee151_013.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_014.nii.gz",
+            "label": "./labelsTr/chimpanzee151_014.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_015.nii.gz",
+            "label": "./labelsTr/chimpanzee151_015.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_016.nii.gz",
+            "label": "./labelsTr/chimpanzee151_016.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_017.nii.gz",
+            "label": "./labelsTr/chimpanzee151_017.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_018.nii.gz",
+            "label": "./labelsTr/chimpanzee151_018.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_019.nii.gz",
+            "label": "./labelsTr/chimpanzee151_019.nii.gz"
+        },
+        {
+            "image": "./imagesTr/chimpanzee151_020.nii.gz",
+            "label": "./labelsTr/chimpanzee151_020.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_502.nii.gz",
+            "label": "./labelsTr/macaque_502.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_504.nii.gz",
+            "label": "./labelsTr/macaque_504.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_505.nii.gz",
+            "label": "./labelsTr/macaque_505.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_509.nii.gz",
+            "label": "./labelsTr/macaque_509.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_510.nii.gz",
+            "label": "./labelsTr/macaque_510.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_513.nii.gz",
+            "label": "./labelsTr/macaque_513.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_515.nii.gz",
+            "label": "./labelsTr/macaque_515.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_519.nii.gz",
+            "label": "./labelsTr/macaque_519.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_524.nii.gz",
+            "label": "./labelsTr/macaque_524.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_525.nii.gz",
+            "label": "./labelsTr/macaque_525.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_601.nii.gz",
+            "label": "./labelsTr/macaque_601.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_602.nii.gz",
+            "label": "./labelsTr/macaque_602.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_604.nii.gz",
+            "label": "./labelsTr/macaque_604.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_605.nii.gz",
+            "label": "./labelsTr/macaque_605.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_607.nii.gz",
+            "label": "./labelsTr/macaque_607.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_701.nii.gz",
+            "label": "./labelsTr/macaque_701.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_702.nii.gz",
+            "label": "./labelsTr/macaque_702.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_703.nii.gz",
+            "label": "./labelsTr/macaque_703.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_704.nii.gz",
+            "label": "./labelsTr/macaque_704.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_705.nii.gz",
+            "label": "./labelsTr/macaque_705.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_706.nii.gz",
+            "label": "./labelsTr/macaque_706.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_707.nii.gz",
+            "label": "./labelsTr/macaque_707.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_708.nii.gz",
+            "label": "./labelsTr/macaque_708.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_710.nii.gz",
+            "label": "./labelsTr/macaque_710.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_711.nii.gz",
+            "label": "./labelsTr/macaque_711.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_712.nii.gz",
+            "label": "./labelsTr/macaque_712.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_714.nii.gz",
+            "label": "./labelsTr/macaque_714.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_715.nii.gz",
+            "label": "./labelsTr/macaque_715.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_716.nii.gz",
+            "label": "./labelsTr/macaque_716.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_717.nii.gz",
+            "label": "./labelsTr/macaque_717.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_719.nii.gz",
+            "label": "./labelsTr/macaque_719.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_720.nii.gz",
+            "label": "./labelsTr/macaque_720.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_721.nii.gz",
+            "label": "./labelsTr/macaque_721.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_722.nii.gz",
+            "label": "./labelsTr/macaque_722.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_723.nii.gz",
+            "label": "./labelsTr/macaque_723.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_724.nii.gz",
+            "label": "./labelsTr/macaque_724.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_725.nii.gz",
+            "label": "./labelsTr/macaque_725.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_726.nii.gz",
+            "label": "./labelsTr/macaque_726.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_801.nii.gz",
+            "label": "./labelsTr/macaque_801.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_802.nii.gz",
+            "label": "./labelsTr/macaque_802.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_803.nii.gz",
+            "label": "./labelsTr/macaque_803.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_804.nii.gz",
+            "label": "./labelsTr/macaque_804.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_806.nii.gz",
+            "label": "./labelsTr/macaque_806.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_807.nii.gz",
+            "label": "./labelsTr/macaque_807.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_808.nii.gz",
+            "label": "./labelsTr/macaque_808.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_810.nii.gz",
+            "label": "./labelsTr/macaque_810.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_817.nii.gz",
+            "label": "./labelsTr/macaque_817.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_822.nii.gz",
+            "label": "./labelsTr/macaque_822.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_825.nii.gz",
+            "label": "./labelsTr/macaque_825.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_827.nii.gz",
+            "label": "./labelsTr/macaque_827.nii.gz"
+        },
+        {
+            "image": "./imagesTr/macaque_874.nii.gz",
+            "label": "./labelsTr/macaque_874.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_001.nii.gz",
+            "label": "./labelsTr/marmoset_001.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_002.nii.gz",
+            "label": "./labelsTr/marmoset_002.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_003.nii.gz",
+            "label": "./labelsTr/marmoset_003.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_004.nii.gz",
+            "label": "./labelsTr/marmoset_004.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_005.nii.gz",
+            "label": "./labelsTr/marmoset_005.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_006.nii.gz",
+            "label": "./labelsTr/marmoset_006.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_007.nii.gz",
+            "label": "./labelsTr/marmoset_007.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_008.nii.gz",
+            "label": "./labelsTr/marmoset_008.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_009.nii.gz",
+            "label": "./labelsTr/marmoset_009.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_010.nii.gz",
+            "label": "./labelsTr/marmoset_010.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_011.nii.gz",
+            "label": "./labelsTr/marmoset_011.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_012.nii.gz",
+            "label": "./labelsTr/marmoset_012.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_013.nii.gz",
+            "label": "./labelsTr/marmoset_013.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_014.nii.gz",
+            "label": "./labelsTr/marmoset_014.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_015.nii.gz",
+            "label": "./labelsTr/marmoset_015.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_016.nii.gz",
+            "label": "./labelsTr/marmoset_016.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_017.nii.gz",
+            "label": "./labelsTr/marmoset_017.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_018.nii.gz",
+            "label": "./labelsTr/marmoset_018.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_019.nii.gz",
+            "label": "./labelsTr/marmoset_019.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_020.nii.gz",
+            "label": "./labelsTr/marmoset_020.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_021.nii.gz",
+            "label": "./labelsTr/marmoset_021.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_022.nii.gz",
+            "label": "./labelsTr/marmoset_022.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_023.nii.gz",
+            "label": "./labelsTr/marmoset_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_024.nii.gz",
+            "label": "./labelsTr/marmoset_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_025.nii.gz",
+            "label": "./labelsTr/marmoset_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_026.nii.gz",
+            "label": "./labelsTr/marmoset_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_027.nii.gz",
+            "label": "./labelsTr/marmoset_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_028.nii.gz",
+            "label": "./labelsTr/marmoset_028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_029.nii.gz",
+            "label": "./labelsTr/marmoset_029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_030.nii.gz",
+            "label": "./labelsTr/marmoset_030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_031.nii.gz",
+            "label": "./labelsTr/marmoset_031.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_032.nii.gz",
+            "label": "./labelsTr/marmoset_032.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_033.nii.gz",
+            "label": "./labelsTr/marmoset_033.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_034.nii.gz",
+            "label": "./labelsTr/marmoset_034.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_035.nii.gz",
+            "label": "./labelsTr/marmoset_035.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_036.nii.gz",
+            "label": "./labelsTr/marmoset_036.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_037.nii.gz",
+            "label": "./labelsTr/marmoset_037.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_038.nii.gz",
+            "label": "./labelsTr/marmoset_038.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_039.nii.gz",
+            "label": "./labelsTr/marmoset_039.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_040.nii.gz",
+            "label": "./labelsTr/marmoset_040.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_041.nii.gz",
+            "label": "./labelsTr/marmoset_041.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_042.nii.gz",
+            "label": "./labelsTr/marmoset_042.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_043.nii.gz",
+            "label": "./labelsTr/marmoset_043.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_044.nii.gz",
+            "label": "./labelsTr/marmoset_044.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_045.nii.gz",
+            "label": "./labelsTr/marmoset_045.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_046.nii.gz",
+            "label": "./labelsTr/marmoset_046.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_047.nii.gz",
+            "label": "./labelsTr/marmoset_047.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_048.nii.gz",
+            "label": "./labelsTr/marmoset_048.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_049.nii.gz",
+            "label": "./labelsTr/marmoset_049.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_050.nii.gz",
+            "label": "./labelsTr/marmoset_050.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_051.nii.gz",
+            "label": "./labelsTr/marmoset_051.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_052.nii.gz",
+            "label": "./labelsTr/marmoset_052.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_053.nii.gz",
+            "label": "./labelsTr/marmoset_053.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_054.nii.gz",
+            "label": "./labelsTr/marmoset_054.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_055.nii.gz",
+            "label": "./labelsTr/marmoset_055.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_056.nii.gz",
+            "label": "./labelsTr/marmoset_056.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_057.nii.gz",
+            "label": "./labelsTr/marmoset_057.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_058.nii.gz",
+            "label": "./labelsTr/marmoset_058.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_059.nii.gz",
+            "label": "./labelsTr/marmoset_059.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_060.nii.gz",
+            "label": "./labelsTr/marmoset_060.nii.gz"
+        }
+    ]
+}

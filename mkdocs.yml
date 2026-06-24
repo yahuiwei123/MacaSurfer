@@ -1,0 +1,43 @@
+site_name: MacaSurfer v3.0
+site_description: NHP MRI Processing Pipeline — structural & functional MRI preprocessing, surface reconstruction, and normative modeling
+site_author: MacaSurfer Team
+repo_url: https://github.com/yahuiwei123/MacaSurfer
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Installation: INSTALLATION.md
+  - Parameters: PARAMETERS.md

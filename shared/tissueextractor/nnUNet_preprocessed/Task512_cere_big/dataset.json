@@ -1,0 +1,128 @@
+{
+    "description": "",
+    "labels": {
+        "0": "background",
+        "1": "cere"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "T1"
+    },
+    "name": "Task512_cere_big",
+    "numTest": 0,
+    "numTraining": 21,
+    "reference": "",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "test": [],
+    "training": [
+        {
+            "image": "./imagesTr/cere_023.nii.gz",
+            "label": "./labelsTr/cere_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_024.nii.gz",
+            "label": "./labelsTr/cere_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_025.nii.gz",
+            "label": "./labelsTr/cere_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_026.nii.gz",
+            "label": "./labelsTr/cere_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_027.nii.gz",
+            "label": "./labelsTr/cere_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_028.nii.gz",
+            "label": "./labelsTr/cere_028.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_029.nii.gz",
+            "label": "./labelsTr/cere_029.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_030.nii.gz",
+            "label": "./labelsTr/cere_030.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_031.nii.gz",
+            "label": "./labelsTr/cere_031.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_032.nii.gz",
+            "label": "./labelsTr/cere_032.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_033.nii.gz",
+            "label": "./labelsTr/cere_033.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_034.nii.gz",
+            "label": "./labelsTr/cere_034.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_035.nii.gz",
+            "label": "./labelsTr/cere_035.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_036.nii.gz",
+            "label": "./labelsTr/cere_036.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_037.nii.gz",
+            "label": "./labelsTr/cere_037.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_038.nii.gz",
+            "label": "./labelsTr/cere_038.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_039.nii.gz",
+            "label": "./labelsTr/cere_039.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_040.nii.gz",
+            "label": "./labelsTr/cere_040.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_041.nii.gz",
+            "label": "./labelsTr/cere_041.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_042.nii.gz",
+            "label": "./labelsTr/cere_042.nii.gz"
+        },
+        {
+            "image": "./imagesTr/human_023.nii.gz",
+            "label": "./labelsTr/human_023.nii.gz"
+        },
+        {
+            "image": "./imagesTr/human_024.nii.gz",
+            "label": "./labelsTr/human_024.nii.gz"
+        },
+        {
+            "image": "./imagesTr/human_025.nii.gz",
+            "label": "./labelsTr/human_025.nii.gz"
+        },
+        {
+            "image": "./imagesTr/human_026.nii.gz",
+            "label": "./labelsTr/human_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_026.nii.gz",
+            "label": "./labelsTr/marmoset_026.nii.gz"
+        },
+        {
+            "image": "./imagesTr/marmoset_027.nii.gz",
+            "label": "./labelsTr/marmoset_027.nii.gz"
+        },
+        {
+            "image": "./imagesTr/cere_043.nii.gz",
+            "label": "./labelsTr/cere_043.nii.gz"
+        }
+    ]
+}

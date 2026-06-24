@@ -1,0 +1,373 @@
+{
+    "name": null,
+    "save_dir": "resources/blr/save_dir/MBNA124/R/sulc",
+    "savemodel": true,
+    "saveresults": true,
+    "saveplots": false,
+    "evaluate_model": true,
+    "template_regression_model": {
+        "name": "template",
+        "type": "BLR",
+        "is_fitted": false,
+        "is_from_dict": false,
+        "transfered": false,
+        "ptk_version": "1.1.2",
+        "_name": "template",
+        "n_iter": 100,
+        "tol": 0.001,
+        "ard": false,
+        "optimizer": "l-bfgs-b",
+        "l_bfgs_b_l": 0.1,
+        "l_bfgs_b_epsilon": 0.1,
+        "l_bfgs_b_norm": "l2",
+        "fixed_effect": true,
+        "fixed_effect_slope": false,
+        "fixed_effect_slope_indices": null,
+        "heteroskedastic": true,
+        "fixed_effect_var": false,
+        "fixed_effect_var_slope": false,
+        "fixed_effect_var_slope_indices": null,
+        "warp_name": "warpsinharcsinh",
+        "warp_params": 2,
+        "n_gamma": 2,
+        "warp_reparam": false,
+        "gamma": null,
+        "basis_function_mean": {
+            "basis_column": 0,
+            "is_fitted": false,
+            "basis_name": "bspline",
+            "min": 0,
+            "max": 1,
+            "compute_min": true,
+            "compute_max": true,
+            "degree": 3,
+            "nknots": 5,
+            "left_expand": 0.05,
+            "right_expand": 0.05,
+            "knot_method": "uniform",
+            "knots": null,
+            "basis_function": "BsplineBasisFunction"
+        },
+        "basis_function_var": {
+            "basis_column": 0,
+            "is_fitted": false,
+            "basis_name": "linear",
+            "min": 0,
+            "max": 1,
+            "compute_min": true,
+            "compute_max": true,
+            "basis_function": "LinearBasisFunction"
+        },
+        "models_variance": true,
+        "hyp0": null,
+        "hyp": null
+    },
+    "inscalers": {
+        "age": {
+            "scaler_type": "standardize",
+            "adjust_outliers": false,
+            "m": 4.4156741938681705,
+            "s": 4.50361872601586,
+            "min": 0.835616438,
+            "max": 23.0
+        }
+    },
+    "is_fitted": true,
+    "inscaler": "standardize",
+    "outscaler": "standardize",
+    "ptk_version": "1.1.2",
+    "covariates": [
+        "age"
+    ],
+    "unique_batch_effects": {
+        "sex": [
+            "F",
+            "M"
+        ],
+        "site": [
+            "site-THTMC_HUST",
+            "site-UIM_BJ",
+            "site-WCMC_GZ",
+            "site-ZNH_WH",
+            "site-amu",
+            "site-bordeaux",
+            "site-ecnu",
+            "site-ion",
+            "site-liuning",
+            "site-mcgill",
+            "site-mountsinai-P",
+            "site-mountsinai-S",
+            "site-newcastle",
+            "site-nin",
+            "site-nki",
+            "site-ohsu",
+            "site-oxford",
+            "site-rochester",
+            "site-rockefeller",
+            "site-sbri",
+            "site-ucdavis",
+            "site-uminn",
+            "site-uwmadison",
+            "site-uwo"
+        ]
+    },
+    "inverse_batch_effect_counts": {
+        "sex": {
+            "0_322": "F",
+            "1_520": "M"
+        },
+        "site": {
+            "0_2": "site-THTMC_HUST",
+            "1_40": "site-UIM_BJ",
+            "2_5": "site-WCMC_GZ",
+            "3_69": "site-ZNH_WH",
+            "4_4": "site-amu",
+            "5_8": "site-bordeaux",
+            "6_4": "site-ecnu",
+            "7_8": "site-ion",
+            "8_23": "site-liuning",
+            "9_3": "site-mcgill",
+            "10_9": "site-mountsinai-P",
+            "11_5": "site-mountsinai-S",
+            "12_14": "site-newcastle",
+            "13_2": "site-nin",
+            "14_2": "site-nki",
+            "15_2": "site-ohsu",
+            "16_19": "site-oxford",
+            "17_3": "site-rochester",
+            "18_6": "site-rockefeller",
+            "19_22": "site-sbri",
+            "20_19": "site-ucdavis",
+            "21_2": "site-uminn",
+            "22_559": "site-uwmadison",
+            "23_12": "site-uwo"
+        }
+    },
+    "batch_effects_maps": {
+        "sex": {
+            "0_0": "F",
+            "1_1": "M"
+        },
+        "site": {
+            "0_0": "site-THTMC_HUST",
+            "1_1": "site-UIM_BJ",
+            "2_2": "site-WCMC_GZ",
+            "3_3": "site-ZNH_WH",
+            "4_4": "site-amu",
+            "5_5": "site-bordeaux",
+            "6_6": "site-ecnu",
+            "7_7": "site-ion",
+            "8_8": "site-liuning",
+            "9_9": "site-mcgill",
+            "10_10": "site-mountsinai-P",
+            "11_11": "site-mountsinai-S",
+            "12_12": "site-newcastle",
+            "13_13": "site-nin",
+            "14_14": "site-nki",
+            "15_15": "site-ohsu",
+            "16_16": "site-oxford",
+            "17_17": "site-rochester",
+            "18_18": "site-rockefeller",
+            "19_19": "site-sbri",
+            "20_20": "site-ucdavis",
+            "21_21": "site-uminn",
+            "22_22": "site-uwmadison",
+            "23_23": "site-uwo"
+        }
+    },
+    "batch_effect_covariate_ranges": {
+        "sex": {
+            "F": {
+                "age": {
+                    "mean": 4.418083468071429,
+                    "min": 0.835616438,
+                    "max": 22.5
+                }
+            },
+            "M": {
+                "age": {
+                    "mean": 4.41418229715,
+                    "min": 0.852054795,
+                    "max": 23.0
+                }
+            }
+        },
+        "site": {
+            "site-THTMC_HUST": {
+                "age": {
+                    "mean": 9.67,
+                    "min": 8.92,
+                    "max": 10.42
+                }
+            },
+            "site-UIM_BJ": {
+                "age": {
+                    "mean": 10.442,
+                    "min": 8.83,
+                    "max": 13.25
+                }
+            },
+            "site-WCMC_GZ": {
+                "age": {
+                    "mean": 8.75,
+                    "min": 8.75,
+                    "max": 8.75
+                }
+            },
+            "site-ZNH_WH": {
+                "age": {
+                    "mean": 10.329565217391302,
+                    "min": 4.67,
+                    "max": 17.42
+                }
+            },
+            "site-amu": {
+                "age": {
+                    "mean": 7.5,
+                    "min": 7.0,
+                    "max": 8.0
+                }
+            },
+            "site-bordeaux": {
+                "age": {
+                    "mean": 10.85,
+                    "min": 3.0,
+                    "max": 23.0
+                }
+            },
+            "site-ecnu": {
+                "age": {
+                    "mean": 3.395,
+                    "min": 2.67,
+                    "max": 3.75
+                }
+            },
+            "site-ion": {
+                "age": {
+                    "mean": 5.02,
+                    "min": 3.8,
+                    "max": 5.81
+                }
+            },
+            "site-liuning": {
+                "age": {
+                    "mean": 11.782608695652174,
+                    "min": 9.0,
+                    "max": 15.0
+                }
+            },
+            "site-mcgill": {
+                "age": {
+                    "mean": 10.666666666666666,
+                    "min": 10.0,
+                    "max": 12.0
+                }
+            },
+            "site-mountsinai-P": {
+                "age": {
+                    "mean": 4.8,
+                    "min": 3.4,
+                    "max": 8.0
+                }
+            },
+            "site-mountsinai-S": {
+                "age": {
+                    "mean": 5.94,
+                    "min": 5.3,
+                    "max": 6.3
+                }
+            },
+            "site-newcastle": {
+                "age": {
+                    "mean": 7.533571428571428,
+                    "min": 3.9,
+                    "max": 13.14
+                }
+            },
+            "site-nin": {
+                "age": {
+                    "mean": 5.75,
+                    "min": 5.0,
+                    "max": 6.5
+                }
+            },
+            "site-nki": {
+                "age": {
+                    "mean": 6.5,
+                    "min": 6.0,
+                    "max": 7.0
+                }
+            },
+            "site-ohsu": {
+                "age": {
+                    "mean": 5.0,
+                    "min": 5.0,
+                    "max": 5.0
+                }
+            },
+            "site-oxford": {
+                "age": {
+                    "mean": 4.067894736842105,
+                    "min": 2.41,
+                    "max": 6.72
+                }
+            },
+            "site-rochester": {
+                "age": {
+                    "mean": 3.0,
+                    "min": 3.0,
+                    "max": 3.0
+                }
+            },
+            "site-rockefeller": {
+                "age": {
+                    "mean": 4.0,
+                    "min": 4.0,
+                    "max": 4.0
+                }
+            },
+            "site-sbri": {
+                "age": {
+                    "mean": 8.4,
+                    "min": 3.6,
+                    "max": 13.9
+                }
+            },
+            "site-ucdavis": {
+                "age": {
+                    "mean": 20.384210526315794,
+                    "min": 18.6,
+                    "max": 22.5
+                }
+            },
+            "site-uminn": {
+                "age": {
+                    "mean": 10.0,
+                    "min": 10.0,
+                    "max": 10.0
+                }
+            },
+            "site-uwmadison": {
+                "age": {
+                    "mean": 1.9171514691180678,
+                    "min": 0.835616438,
+                    "max": 4.419178082
+                }
+            },
+            "site-uwo": {
+                "age": {
+                    "mean": 5.333333333333333,
+                    "min": 4.0,
+                    "max": 8.0
+                }
+            }
+        }
+    },
+    "covariate_ranges": {
+        "age": {
+            "mean": 4.4156741938681705,
+            "min": 0.835616438,
+            "max": 23.0
+        }
+    }
+}
