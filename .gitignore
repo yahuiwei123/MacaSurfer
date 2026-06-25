@@ -36,6 +36,5 @@ shared/brainextractor/macaUNet/models/
 shared/tissueextractor/nnUNet_trained_models/
 global/templates/MEBRAIN/RB_all_2020-01-02.gca
 
-# Figures (user-provided, may be large .tif)
-figures/*.tif
+# Figures placeholder
 !figures/.gitkeep
