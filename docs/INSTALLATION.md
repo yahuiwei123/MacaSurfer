@@ -38,9 +38,9 @@ MacaSurfer is a ground-up MRI processing pipeline purpose-built for macaque monk
 
 ## Overview
 
-![MacaSurfer Pipeline](../figures/pipeline.tif)
+![MacaSurfer Pipeline](../figures/pipeline.png)
 
-For a visual overview of the complete project — from data collection through model training to deployment — see the [project workflow diagram](../figures/workflow.tif).
+For a visual overview of the complete project — from data collection through model training to deployment — see the [project workflow diagram](../figures/workflow.png).
 
 MacaSurfer supports two species: **Macaque Mulatta** & **Macaque Fascicularis** (MEBRAIN templates).
 

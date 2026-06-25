@@ -8,7 +8,7 @@ A ground-up MRI processing pipeline purpose-built for **Macaque** (Macaca Mulatt
 
 ## Pipeline Overview
 
-![MacaSurfer Pipeline](../figures/pipeline.tif)
+![MacaSurfer Pipeline](../figures/pipeline.png)
 
 MacaSurfer processes BIDS-formatted MRI data through six Nextflow workflows:
 
@@ -23,7 +23,7 @@ MacaSurfer processes BIDS-formatted MRI data through six Nextflow workflows:
 
 ## Project Development
 
-![Project Workflow](../figures/workflow.tif)
+![Project Workflow](../figures/workflow.png)
 
 The complete development cycle — from multi-center data collection, manual label curation, pipeline assembly, to deep learning model training and validation.
 
@@ -31,19 +31,19 @@ The complete development cycle — from multi-center data collection, manual lab
 
 ### Generalization Across Centers and Ages
 
-![Generalization](../figures/general.tif)
+![Generalization](../figures/general.png)
 
 Validated across multiple primate imaging centers and a wide age range, demonstrating consistent performance independent of scanner vendor, field strength, site protocol, or subject age.
 
 ### Robustness to Image Noise
 
-![Noise Robustness](../figures/robustness.tif)
+![Noise Robustness](../figures/robustness.png)
 
 Systematic noise perturbation experiments confirm that MacaSurfer maintains high segmentation accuracy and surface reconstruction quality even under severely degraded acquisition conditions.
 
 ### Test-Retest Reliability
 
-![Test-Retest Reliability](../figures/test-retest.tif)
+![Test-Retest Reliability](../figures/test-retest.png)
 
 Cortical morphometric measures (thickness, curvature, sulcal depth, volume) derived from repeated within-session scans demonstrate excellent intraclass correlation (ICC > 0.9), validating the pipeline for longitudinal and multi-session experimental designs.
 
