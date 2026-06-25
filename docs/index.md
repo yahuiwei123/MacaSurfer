@@ -77,6 +77,18 @@ Cortical morphometric measures (thickness, curvature, sulcal depth, volume) deri
 | **[Installation Guide](INSTALLATION.md)** | Container (macasurfer.sif) usage & full source installation with step-by-step instructions |
 | **[Parameter Reference](PARAMETERS.md)** | Complete parameters grouped by processing stage with CLI flags, defaults, and usage examples |
 
+## Related Projects
+
+MacaSurfer integrates several standalone tools, each available as an independent repository:
+
+| Tool | Repository | Description |
+|------|-----------|-------------|
+| **AutoOrientation** | [yahuiwei123/AutoOrientation](https://github.com/yahuiwei123/AutoOrientation) | Automatic anatomical orientation correction for raw NIfTI volumes |
+| **MacaBrainNet** | [yahuiwei123/MacaBrainNet](https://github.com/yahuiwei123/MacaBrainNet) | Ensemble 3D U-Net for whole-brain tissue segmentation (GM, WM, CSF) |
+| **Macaque Normative Modeling** | [yahuiwei123/MacaqueNormativeModeling](https://github.com/yahuiwei123/MacaqueNormativeModeling) | Bayesian linear regression normative models for cortical morphometry |
+| **Surface-Aware Registration** | [yahuiwei123/SurfaceAwareRegistration](https://github.com/yahuiwei123/SurfaceAwareRegistration) | Cortical surface geometry-constrained volume registration |
+| **Tissue-Guided Bias Field Correction** | [yahuiwei123/TissueGuidedBiasFieldCorrection](https://github.com/yahuiwei123/TissueGuidedBiasFieldCorrection) | Tissue-label-informed high- and low-frequency bias field correction |
+
 ## Citation
 
 If you use MacaSurfer in your research, please cite:

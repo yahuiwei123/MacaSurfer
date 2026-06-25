@@ -76,6 +76,18 @@ sh MacaSurfer.sh \
 | **[PARAMETERS.md](PARAMETERS.md)** | Complete parameter reference grouped by processing stage, with usage examples |
 | **[requirements.txt](requirements.txt)** | Python package list for the `macapipe` conda environment |
 
+## Related Projects
+
+MacaSurfer integrates several standalone tools, each available as an independent repository:
+
+| Tool | Repository | Description |
+|------|-----------|-------------|
+| **AutoOrientation** | [yahuiwei123/AutoOrientation](https://github.com/yahuiwei123/AutoOrientation) | Automatic anatomical orientation correction — detects and fixes non-standard image orientation in raw NIfTI volumes |
+| **MacaBrainNet** | [yahuiwei123/MacaBrainNet](https://github.com/yahuiwei123/MacaBrainNet) | Ensemble 3D U-Net for whole-brain tissue segmentation (GM, WM, CSF) trained specifically on macaque brains |
+| **Macaque Normative Modeling** | [yahuiwei123/MacaqueNormativeModeling](https://github.com/yahuiwei123/MacaqueNormativeModeling) | Bayesian linear regression normative models for macaque cortical morphometry (thickness, curvature, sulcal depth, volume) |
+| **Surface-Aware Registration** | [yahuiwei123/SurfaceAwareRegistration](https://github.com/yahuiwei123/SurfaceAwareRegistration) | Cortical surface geometry-constrained volume registration, improving alignment by incorporating sulcal/gyral folding patterns |
+| **Tissue-Guided Bias Field Correction** | [yahuiwei123/TissueGuidedBiasFieldCorrection](https://github.com/yahuiwei123/TissueGuidedBiasFieldCorrection) | Tissue-label-informed high- and low-frequency bias field correction using Gaussian mixture and RBF scatter models |
+
 ## Requirements
 
 - **Container**: Singularity/Apptainer ≥ 3.5 (no other dependencies)
