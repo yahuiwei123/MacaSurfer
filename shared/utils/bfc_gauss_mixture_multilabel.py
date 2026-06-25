@@ -343,6 +343,7 @@ def main(args):
     norm = (image - min_scale) / (max_scale - min_scale)
     corrected_array = np.power(base, np.log(np.clip(norm, a_min=1e-8, a_max=1.0)) / np.log(base) - bias)
     corrected_array = corrected_array * (max_scale - min_scale) + min_scale
+    corrected_array = np.where(region > 0, corrected_array, 0)
     corrected_image = sitk.GetImageFromArray(corrected_array.astype(np.float32))
     corrected_image.CopyInformation(reference_image)
     sitk.WriteImage(corrected_image, corrected_output_path)

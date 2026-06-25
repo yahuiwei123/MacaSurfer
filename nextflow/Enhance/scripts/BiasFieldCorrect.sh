@@ -179,7 +179,7 @@ if [[ ${contain_t2} == "True" ]]; then
 
                 # Process T1w white matter bias field (native resolution, multilabel)
                 ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                    --input_msk ${t1w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --input_img ${t1w_conform} \
                     --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                     --output_img ${t1w_white} \
@@ -197,7 +197,7 @@ if [[ ${contain_t2} == "True" ]]; then
                 # Process T2w bias field (native resolution, multilabel)
                 fslmaths ${t2w_conform} -mas ${prefix}_desc-conform_mask.nii.gz ${t2w_conform}
                 ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                    --input_msk ${t2w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --input_img ${t2w_conform} \
                     --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                     --output_img ${t2w_pial} \
@@ -221,7 +221,7 @@ if [[ ${contain_t2} == "True" ]]; then
 
                 # Process T1w white matter bias field (native resolution)
                 ${python_inter} ${utils_path}/bfc_gauss_mixture.py \
-                    --input_msk ${t1w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --input_img ${t1w_conform} \
                     --input_lab ${BFC_LAB} \
                     --output_img ${t1w_white} \
@@ -242,7 +242,7 @@ if [[ ${contain_t2} == "True" ]]; then
                 ${python_inter} ${utils_path}/bfc_rbf_scatter.py \
                     --input_img ${t2w_conform} \
                     --input_lab ${prefix}_desc-bfc_dseg_T2w.nii.gz \
-                    --input_msk ${t2w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --output_img ${t2w_pial} \
                     --output_bias ${prefix}_desc-bfcbias_T2w.nii.gz \
                     --use_label_value 2 \
@@ -269,7 +269,7 @@ if [[ ${contain_t2} == "True" ]]; then
 
                 # Process T1w white matter bias field (multilabel)
                 ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                --input_msk ${t1w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --input_img ${t1w_conform} \
                     --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                     --output_img ${t1w_white} \
@@ -287,7 +287,7 @@ if [[ ${contain_t2} == "True" ]]; then
                 # Process T2w bias field (multilabel)
                 fslmaths ${t2w_conform} -mas ${prefix}_desc-conform_mask.nii.gz ${t2w_conform}
                 ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                --input_msk ${t2w_conform} \
+                    --input_msk ${prefix}_desc-conform_mask.nii.gz \
                     --input_img ${t2w_conform} \
                     --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                     --output_img ${t2w_pial} \
@@ -364,7 +364,7 @@ else
             ${python_inter} ${utils_path}/conform.py --input ${t1w_tissue19} --output ${prefix}_desc-bfc_tissue19.nii.gz --reorient LIA
 
             ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                --input_msk ${t1w_conform} \
+                --input_msk ${prefix}_desc-conform_mask.nii.gz \
                 --input_img ${t1w_conform} \
                 --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                 --output_img ${t1w_white} \
@@ -387,7 +387,7 @@ else
 
             # Process T1w white matter bias field (native resolution)
             ${python_inter} ${utils_path}/bfc_gauss_mixture.py \
-                --input_msk ${t1w_conform} \
+                --input_msk ${prefix}_desc-conform_mask.nii.gz \
                 --input_img ${t1w_conform} \
                 --input_lab ${BFC_LAB} \
                 --output_img ${t1w_white} \
@@ -413,7 +413,7 @@ else
             ${python_inter} ${utils_path}/conform.py --input ${t1w_tissue19} --output ${prefix}_desc-bfc_tissue19.nii.gz --reorient LIA
 
             ${python_inter} ${utils_path}/bfc_gauss_mixture_multilabel.py \
-                --input_msk ${t1w_conform} \
+                --input_msk ${prefix}_desc-conform_mask.nii.gz \
                 --input_img ${t1w_conform} \
                 --input_lab ${prefix}_desc-bfc_tissue19.nii.gz \
                 --output_img ${t1w_white} \
