@@ -2,7 +2,7 @@
 
 **NHP MRI Processing Pipeline** — structural and functional MRI preprocessing, cortical surface reconstruction, multimodal surface matching (MSM) registration, and normative modeling for non-human primates.
 
-Based on the Human Connectome Project (HCP) pipelines, adapted for **Macaque** (Macaca Mulatta & Macaca Fascicularis).
+A ground-up MRI processing pipeline purpose-built for **Macaque** (Macaca Mulatta & Macaca Fascicularis), covering structural and functional (BOLD) preprocessing, cortical surface reconstruction, MSM registration, and normative modeling.
 
 ---
 

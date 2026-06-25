@@ -1,6 +1,6 @@
 # MacaSurfer v3.0
 
-NHP MRI Processing Pipeline based on the Human Connectome Project (HCP) pipelines.
+A ground-up MRI processing pipeline purpose-built for macaque monkeys, covering structural and functional (BOLD) preprocessing, cortical surface reconstruction, MSM registration, and normative modeling.
 
 ---
 

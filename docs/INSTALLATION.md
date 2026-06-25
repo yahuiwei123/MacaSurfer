@@ -1,6 +1,6 @@
 # MacaSurfer v3.0 — Installation & User Guide
 
-MacaSurfer is an NHP MRI processing pipeline based on HCP pipelines, supporting structural and functional (BOLD) MRI preprocessing, surface reconstruction, MSM registration, and normative modeling.
+MacaSurfer is a ground-up MRI processing pipeline purpose-built for macaque monkeys, supporting structural and functional (BOLD) MRI preprocessing, surface reconstruction, MSM registration, and normative modeling.
 
 ---
 
@@ -364,7 +364,6 @@ wb_command -version
 
 ```bash
 # MSM (Multimodal Surface Matching) — Ubuntu binary
-# Contact the HCP team or use the prebuilt binary.
 # Place the MSM binary at:
 export MSMBINDIR=/usr/local/msm
 # The binary should be: $MSMBINDIR/msm
@@ -716,5 +715,4 @@ A: T2w must be in the same session directory as T1w and follow BIDS naming (`sub
 ## Further Help
 
 - **Parameter reference**: [PARAMETERS.md](PARAMETERS.md)
-- **Issue tracker**: https://github.com/your-org/MacaSurfer/issues
-- **HCP pipelines**: https://github.com/Washington-University/HCPpipelines
+- **Issue tracker**: https://github.com/yahuiwei123/MacaSurfer/issues
