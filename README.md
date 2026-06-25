@@ -88,6 +88,12 @@ MacaSurfer integrates several standalone tools, each available as an independent
 | **Surface-Aware Registration** | [yahuiwei123/SurfaceAwareRegistration](https://github.com/yahuiwei123/SurfaceAwareRegistration) | Cortical surface geometry-constrained volume registration, improving alignment by incorporating sulcal/gyral folding patterns |
 | **Tissue-Guided Bias Field Correction** | [yahuiwei123/TissueGuidedBiasFieldCorrection](https://github.com/yahuiwei123/TissueGuidedBiasFieldCorrection) | Tissue-label-informed high- and low-frequency bias field correction using Gaussian mixture and RBF scatter models |
 
+## Citation
+
+If you use MacaSurfer in your research, please cite:
+
+> Wei, Y. et al. MacaSurfer: unified surface-volume mapping of the macaque brain across the lifespan. 2026.06.14.732101 Preprint at https://doi.org/10.64898/2026.06.14.732101 (2026).
+
 ## Requirements
 
 - **Container**: Singularity/Apptainer ≥ 3.5 (no other dependencies)

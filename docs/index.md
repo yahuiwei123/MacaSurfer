@@ -93,8 +93,4 @@ MacaSurfer integrates several standalone tools, each available as an independent
 
 If you use MacaSurfer in your research, please cite:
 
-> *[Citation information to be added]*
-
-## License
-
-*[License information to be added]*
+> Wei, Y. et al. MacaSurfer: unified surface-volume mapping of the macaque brain across the lifespan. 2026.06.14.732101 Preprint at https://doi.org/10.64898/2026.06.14.732101 (2026).
