@@ -84,7 +84,7 @@ MacaSurfer integrates several standalone tools, each available as an independent
 | Tool | Repository | Description |
 |------|-----------|-------------|
 | **AutoOrientation** | [yahuiwei123/AutoOrientation](https://github.com/yahuiwei123/AutoOrientation) | Automatic anatomical orientation correction for raw NIfTI volumes |
-| **MacaBrainNet** | [yahuiwei123/MacaBrainNet](https://github.com/yahuiwei123/MacaBrainNet) | Ensemble 3D U-Net for whole-brain tissue segmentation (GM, WM, CSF) |
+| **MacaBrainNet** | [yahuiwei123/MacaBrainNet](https://github.com/yahuiwei123/MacaBrainNet) | Ensemble 3D U-Net for whole-brain tissue segmentation (GM, WM, CSF, cerebellum, brainstem, subcortical nuclei) |
 | **Macaque Normative Modeling** | [yahuiwei123/MacaqueNormativeModeling](https://github.com/yahuiwei123/MacaqueNormativeModeling) | Bayesian linear regression normative models for cortical morphometry |
 | **Surface-Aware Registration** | [yahuiwei123/SurfaceAwareRegistration](https://github.com/yahuiwei123/SurfaceAwareRegistration) | Cortical surface geometry-constrained volume registration |
 | **Tissue-Guided Bias Field Correction** | [yahuiwei123/TissueGuidedBiasFieldCorrection](https://github.com/yahuiwei123/TissueGuidedBiasFieldCorrection) | Tissue-label-informed high- and low-frequency bias field correction |
